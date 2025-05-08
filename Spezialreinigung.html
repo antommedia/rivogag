@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spezialreinigung | RIVOG AG | Professionelle Spezialreinigungsdienste in Gossau, St. Gallen</title>
+    <meta name="description" content="RIVOG AG bietet professionelle Spezialreinigungsdienste wie Fassaden-, Industrie-, Teppich- und Polsterreinigung sowie Desinfektionsservice in Gossau und der gesamten Schweiz. Kontaktieren Sie uns für ein unverbindliches Angebot.">
+    <meta name="keywords" content="Spezialreinigung, Fassadenreinigung, Industriereinigung, Teppichreinigung, Polsterreinigung, Desinfektion, Gossau, St. Gallen, Schweiz, RIVOG AG">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/rivog-flag.bw_.png" type="image/png">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(to right, #1a1a1a 50%, #ff6600 50%);
+            min-height: 600px;
+        }
+        .service-box {
+            transition: transform 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+        .bg-rivog-orange {
+            background-color: #ff6600;
+        }
+        .text-rivog-orange {
+            color: #ff6600;
+        }
+        .border-rivog-orange {
+            border-color: #ff6600;
+        }
+        .quality-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+         /* Mobile Nav Popup von unten */
+         #mobile-nav {
+            position: fixed !important;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: auto;
+            z-index: 9999;
+            background: #fff;
+            box-shadow: 0 -8px 32px rgba(0,0,0,0.15);
+            display: none;
+            animation: slideUpMobileNav 0.35s cubic-bezier(0.4,0,0.2,1);
+        }
+        @keyframes slideUpMobileNav {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        #mobile-nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
+            gap: 2rem;
+        }
+        #mobile-nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+        #mobile-nav ul li a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            display: block;
+            padding: 1rem 0;
+            transition: color 0.2s;
+        }
+        #mobile-nav ul li a:hover {
+            color: #ff6600;
+        }
+    </style>
+    
+    <!-- Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Spezialreinigung",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "RIVOG AG",
+        "image": "assets/img/rivog-flag.bw_.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lagerstrasse 4",
+          "addressLocality": "Gossau",
+          "postalCode": "9200",
+          "addressRegion": "SG",
+          "addressCountry": "CH"
+        },
+        "telephone": "+41 71 511 13 03",
+        "email": "info@rivog.ch",
+        "url": "https://www.rivog.ch"
+      },
+      "description": "Professionelle Spezialreinigungsdienste wie Fassadenreinigung, Industriereinigung, Teppich- und Polsterreinigung sowie Desinfektionsservices mit höchster Qualität und Präzision.",
+      "areaServed": ["Gossau", "St. Gallen", "Zürich", "Schweiz"],
+      "serviceType": "Spezialreinigung"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <div class="flex items-center">
+                <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold">RIVOG AG</h1>
+                    <p class="text-sm text-gray-600">Facility Services</p>
+                </div>
+            </div>
+            <nav class="hidden xl:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-rivog-orange">Home</a></li>
+                    <li><a href="index.html#services" class="hover:text-rivog-orange">Dienstleistungen</a></li>
+                    <li><a href="index.html#about" class="hover:text-rivog-orange">Über uns</a></li>
+                    <li><a href="index.html#quality" class="hover:text-rivog-orange">Qualität</a></li>
+                    <li><a href="index.html#contact" class="hover:text-rivog-orange">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="xl:hidden">
+                <button type="button" class="text-gray-600 hover:text-rivog-orange">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 py-8 flex items-center">
+                    <div class="text-white p-6 max-w-lg">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Professionelle Spezialreinigung</h1>
+                        <p class="text-lg mb-8">RIVOG AG bietet maßgeschneiderte Lösungen für anspruchsvolle Reinigungsaufgaben mit speziellen Anforderungen. Höchste Qualität durch geschultes Personal und modernste Technik.</p>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <a href="#contact" class="bg-rivog-orange text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-opacity-90">Angebot anfordern</a>
+                            <a href="#services" class="border border-white text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-white hover:text-gray-900">Leistungsübersicht</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 py-8 flex items-center justify-center">
+                    <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Spezialreinigung" class="max-w-full h-auto rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-3">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm">
+                <a href="index.html" class="hover:text-rivog-orange">Home</a>
+                <i class="fas fa-chevron-right mx-2 text-gray-400 text-xs"></i>
+                <a href="index.html#services" class="hover:text-rivog-orange">Dienstleistungen</a>
+                <i class="fas fa-chevron-right mx-2 text-gray-400 text-xs"></i>
+                <span class="text-rivog-orange">Spezialreinigung</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-2/3 pr-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold mb-6">Spezialreinigung mit Schweizer Präzision</h2>
+                    <div class="w-24 h-1 bg-rivog-orange mb-8"></div>
+                    
+                    <p class="mb-6 text-lg">Die RIVOG AG bietet professionelle Lösungen für anspruchsvolle und spezielle Reinigungsaufgaben, die über die übliche Unterhaltsreinigung hinausgehen. Mit unserem speziell geschulten Team und modernster Technik bewältigen wir selbst die herausforderndsten Reinigungsanforderungen.</p>
+                    
+                    <p class="mb-8">Unsere maßgeschneiderten Spezialreinigungsdienstleistungen werden mit höchster Sorgfalt und unter Einhaltung aller Sicherheits- und Umweltstandards durchgeführt. Wir setzen dabei auf umweltfreundliche Reinigungsmittel und effiziente Verfahren, die gleichzeitig schonend und hochwirksam sind.</p>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-bold mb-4">Unsere Vorteile auf einen Blick</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <span><strong>Speziell geschultes Personal</strong> mit umfassender Expertise</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <span><strong>Modernste Reinigungstechniken</strong> und hochwertige Geräte</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <span><strong>Umweltfreundliche Reinigungsmittel</strong> für nachhaltige Ergebnisse</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <span><strong>Flexible Einsatzzeiten</strong> nach Ihren Bedürfnissen</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <span><strong>Zuverlässige Termintreue</strong> und höchste Servicequalität</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <img src="assets/img/RI-quality-1024x491.png" alt="RIVOG AG Qualitätsstandard" class="w-full h-auto rounded-lg shadow-md mb-8">
+
+                    <h3 class="text-2xl font-bold mb-4">Für wen eignen sich unsere Spezialreinigungsdienste?</h3>
+                    <p class="mb-6">Unsere Spezialreinigungen sind ideal für Unternehmen und Privatpersonen, die besondere Reinigungsanforderungen haben oder mit Standardreinigungen nicht die gewünschten Ergebnisse erzielen. Wir arbeiten mit einer Vielzahl von Kunden, darunter:</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-building text-rivog-orange mr-3"></i>
+                                <h4 class="font-bold">Gewerbliche Gebäude</h4>
+                            </div>
+                            <p>Bürokomplexe, Einkaufszentren und Geschäftshäuser</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-industry text-rivog-orange mr-3"></i>
+                                <h4 class="font-bold">Industrieanlagen</h4>
+                            </div>
+                            <p>Produktionsstätten, Lagerhallen und technische Einrichtungen</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-hospital text-rivog-orange mr-3"></i>
+                                <h4 class="font-bold">Gesundheitseinrichtungen</h4>
+                            </div>
+                            <p>Kliniken, Arztpraxen und Pflegeheime</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-home text-rivog-orange mr-3"></i>
+                                <h4 class="font-bold">Privathaushalte</h4>
+                            </div>
+                            <p>Hochwertige Wohnimmobilien und Villen</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/3 mt-8 lg:mt-0">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-bold mb-4">Kontaktieren Sie uns</h3>
+                        <p class="mb-6">Benötigen Sie eine Beratung zu unseren Spezialreinigungsdiensten? Wir erstellen Ihnen gerne ein individuelles Angebot.</p>
+                        <a href="#contact" class="bg-rivog-orange text-white py-3 px-6 rounded-md font-semibold inline-block hover:bg-opacity-90 w-full text-center">Jetzt anfragen</a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden mb-8">
+                        <div class="bg-rivog-orange text-white p-4">
+                            <h3 class="text-xl font-bold">Unsere Spezialreinigungen</h3>
+                        </div>
+                        <ul class="divide-y divide-gray-200">
+                            <li class="p-4 hover:bg-gray-50">
+                                <a href="#fassadenreinigung" class="flex items-center text-gray-700 hover:text-rivog-orange">
+                                    <i class="fas fa-chevron-right mr-3 text-rivog-orange"></i>
+                                    Fassadenreinigung
+                                </a>
+                            </li>
+                            <li class="p-4 hover:bg-gray-50">
+                                <a href="#industriereinigung" class="flex items-center text-gray-700 hover:text-rivog-orange">
+                                    <i class="fas fa-chevron-right mr-3 text-rivog-orange"></i>
+                                    Industriereinigung
+                                </a>
+                            </li>
+                            <li class="p-4 hover:bg-gray-50">
+                                <a href="#teppich-polsterreinigung" class="flex items-center text-gray-700 hover:text-rivog-orange">
+                                    <i class="fas fa-chevron-right mr-3 text-rivog-orange"></i>
+                                    Teppich- und Polsterreinigung
+                                </a>
+                            </li>
+                            <li class="p-4 hover:bg-gray-50">
+                                <a href="#desinfektion" class="flex items-center text-gray-700 hover:text-rivog-orange">
+                                    <i class="fas fa-chevron-right mr-3 text-rivog-orange"></i>
+                                    Desinfektion und Hygiene
+                                </a>
+                            </li>
+                            <li class="p-4 hover:bg-gray-50">
+                                <a href="#sonderreinigung" class="flex items-center text-gray-700 hover:text-rivog-orange">
+                                    <i class="fas fa-chevron-right mr-3 text-rivog-orange"></i>
+                                    Sonderreinigungen
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="bg-rivog-orange text-white p-4">
+                            <h3 class="text-xl font-bold">Weitere Dienstleistungen</h3>
+                        </div>
+                        <ul class="divide-y divide-gray-200">
+                            <li class="p-4 hover:bg-gray-50">
+                                <a href="unterhaltsreinigung.html" class="flex items-center text-gray-700 hover:text-rivog-orange">
+                                    <i class="fas fa-chevron-right mr-3 text-rivog-orange"></i>
+                                    Unterhaltsreinigung
+                                </a>
+                            </li>
+                            <li class="p-4 hover:bg-gray-50">
+                                <a href="baureinigung.html" class="flex items-center text-gray-700 hover:text-rivog-orange">
+                                    <i class="fas fa-chevron-right mr-3 text-rivog-orange"></i>
+                                    Baureinigung
+                                </a>
+                            </li>
+                            <li class="p-4 hover:bg-gray-50">
+                                <a href="security.html" class="flex items-center text-gray-700 hover:text-rivog-orange">
+                                    <i class="fas fa-chevron-right mr-3 text-rivog-orange"></i>
+                                    Baustellenbewachung
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Unsere Spezialreinigungsleistungen</h2>
+                <p class="text-xl text-gray-600">Maßgeschneiderte Lösungen für besondere Anforderungen</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <!-- Fassadenreinigung -->
+            <div id="fassadenreinigung" class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="assets/img/rivog-flag.bw_.png" alt="Fassadenreinigung RIVOG AG" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-3">Fassadenreinigung</h3>
+                        <p class="mb-4">Eine saubere Fassade ist die Visitenkarte Ihres Gebäudes. Wir bieten professionelle Fassadenreinigung für alle Arten von Oberflächen – vom historischen Sandstein bis zur modernen Glasfassade.</p>
+                        
+                        <h4 class="font-bold mb-2">Unsere Leistungen umfassen:</h4>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Reinigung von Glas-, Metall-, Stein- und Betonfassaden</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Entfernung von Graffiti, Algen und Verschmutzungen</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Hochdruckreinigung mit modernen Geräten</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Langfristiger Fassadenschutz durch Imprägnierung</span>
+                            </li>
+                        </ul>
+                        
+                        <p class="mb-4">Unsere Fachleute berücksichtigen die speziellen Eigenschaften jeder Fassade und wählen die geeigneten Reinigungsverfahren und -mittel, um sowohl ein optimales Ergebnis zu erzielen als auch die Substanz Ihrer Fassade zu schützen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industriereinigung -->
+            <div id="industriereinigung" class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/3">
+                        <img src="assets/img/RIQ-logo-1024x856.png" alt="Industriereinigung RIVOG AG" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-3">Industriereinigung</h3>
+                        <p class="mb-4">Industrieanlagen und Produktionsstätten stellen besondere Anforderungen an die Reinigung. Wir bieten spezialisierte Reinigungslösungen, die auf die spezifischen Bedürfnisse Ihrer Branche zugeschnitten sind.</p>
+                        
+                        <h4 class="font-bold mb-2">Unsere Industriereinigungsdienste beinhalten:</h4>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Reinigung von Produktionshallen und Maschinenparks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Entfernung von Öl und Fett mit speziellen Reinigungsmitteln</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Reinigung von Industrie- und Hallenböden</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Lager- und Hochregalsysteme</span>
+                            </li>
+                        </ul>
+                        
+                        <p class="mb-4">Unsere Industriereinigungsdienste werden von geschultem Personal durchgeführt, das mit den Sicherheitsanforderungen in Industrieumgebungen vertraut ist und alle erforderlichen Sicherheitsvorkehrungen einhält.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teppich- und Polsterreinigung -->
+            <div id="teppich-polsterreinigung" class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="assets/img/happyworkers-rivog.png" alt="Teppichreinigung RIVOG AG" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-3">Teppich- und Polsterreinigung</h3>
+                        <p class="mb-4">Teppiche und Polstermöbel verschönern Ihre Räume, sammeln aber mit der Zeit Staub, Allergene und Flecken. Unsere professionelle Teppich- und Polsterreinigung verleiht Ihren Textilien neuen Glanz und verbessert gleichzeitig die Raumluft.</p>
+                        
+                        <h4 class="font-bold mb-2">Unser Service umfasst:</h4>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Reinigung von Teppichen, Teppichböden und Läufern</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Polsterreinigung für Sofas, Stühle und andere Polstermöbel</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Entfernung hartnäckiger Flecken und Gerüche</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Antiallergische Behandlung gegen Milben und Allergene</span>
+                            </li>
+                        </ul>
+                        
+                        <p class="mb-4">Wir verwenden schonende, aber effektive Reinigungsmethoden und -mittel, die speziell auf das jeweilige Material abgestimmt sind, um die Lebensdauer Ihrer Textilien zu verlängern und gleichzeitig ein optimales Reinigungsergebnis zu erzielen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desinfektion und Hygiene -->
+            <div id="desinfektion" class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/3">
+                        <img src="assets/img/rivog-flag.bw_.png" alt="Desinfektion und Hygiene RIVOG AG" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-3">Desinfektion und Hygiene</h3>
+                        <p class="mb-4">Besonders in gesundheitssensiblen Bereichen, öffentlichen Einrichtungen oder nach besonderen Ereignissen ist eine gründliche Desinfektion unerlässlich. Wir bieten professionelle Desinfektionsmaßnahmen mit zertifizierten Produkten.</p>
+                        
+                        <h4 class="font-bold mb-2">Unsere Desinfektionsleistungen umfassen:</h4>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Oberflächendesinfektion in Büros, Praxen und öffentlichen Einrichtungen</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Gezielte Desinfektion von Kontaktflächen und Hotspots</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Großflächige Raumdesinfektion mit Vernebelungstechnik</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Sanitärhygiene und Desinfektion von Sanitärbereichen</span>
+                            </li>
+                        </ul>
+                        
+                        <p class="mb-4">Unsere Desinfektionsmaßnahmen werden mit besonderer Sorgfalt und unter Einhaltung aller relevanten Hygienevorschriften durchgeführt. Wir verwenden ausschließlich zugelassene und geprüfte Desinfektionsmittel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sonderreinigung -->
+            <div id="sonderreinigung" class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="assets/img/Muelltuete-rivog.png" alt="Sonderreinigung RIVOG AG" class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-3">Sonderreinigungen</h3>
+                        <p class="mb-4">Für besondere Herausforderungen bieten wir spezialisierte Reinigungslösungen, die auf Ihre individuellen Anforderungen zugeschnitten sind. Egal ob nach einem Brand, Wasserschaden oder für andere spezielle Reinigungsaufgaben.</p>
+                        
+                        <h4 class="font-bold mb-2">Zu unseren Sonderreinigungen gehören:</h4>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Reinigung nach Brand- oder Wasserschäden</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Entfernung von Schimmel und Geruchsbeseitigung</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Reinigung von Glasdächern, Wintergärten und Oberlichtern</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-rivog-orange mt-1 mr-2"></i>
+                                <span>Spezialreinigung von technischen Anlagen</span>
+                            </li>
+                        </ul>
+                        
+                        <p class="mb-4">Bei besonderen Reinigungsanforderungen beraten wir Sie gerne individuell und finden die optimale Lösung für Ihre spezifischen Bedürfnisse. Unser Expertenteam steht Ihnen bei allen Fragen zur Verfügung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-rivog-orange py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Überzeugen Sie sich von unserer Spezialreinigung</h2>
+            <p class="text-white text-lg mb-8 max-w-3xl mx-auto">Kontaktieren Sie uns noch heute für ein unverbindliches Angebot. Unsere Experten beraten Sie gerne und finden die optimale Lösung für Ihre Reinigungsbedürfnisse.</p>
+            <div class="flex justify-center">
+                <a href="#contact" class="bg-white text-rivog-orange py-3 px-8 rounded-md font-semibold inline-block hover:bg-gray-100">Jetzt kostenlose Beratung anfragen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Häufig gestellte Fragen</h2>
+                <p class="text-xl text-gray-600">Antworten auf die wichtigsten Fragen zu unseren Spezialreinigungsdiensten</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="border-b border-gray-200 p-4">
+                        <h3 class="text-lg font-bold">Wie oft sollte eine Fassadenreinigung durchgeführt werden?</h3>
+                    </div>
+                    <div class="p-4">
+                        <p>Die Häufigkeit der Fassadenreinigung hängt von verschiedenen Faktoren ab, wie der Art der Fassade, der Umgebung und der Witterung. In der Regel empfehlen wir eine Reinigung alle 2-5 Jahre. In städtischen Gebieten mit höherer Umweltbelastung oder bei Gebäuden, die starken Witterungseinflüssen ausgesetzt sind, kann eine häufigere Reinigung sinnvoll sein. Unsere Experten beraten Sie gerne individuell nach einer Begutachtung Ihres Objekts.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="border-b border-gray-200 p-4">
+                        <h3 class="text-lg font-bold">Welche Reinigungsmittel werden für die Teppich- und Polsterreinigung verwendet?</h3>
+                    </div>
+                    <div class="p-4">
+                        <p>Für die Teppich- und Polsterreinigung verwenden wir speziell auf das Material abgestimmte, hochwertige und umweltfreundliche Reinigungsmittel. Diese entfernen effektiv Schmutz und Flecken, sind dabei aber schonend zu den Fasern und hinterlassen keine schädlichen Rückstände. Bei empfindlichen Materialien oder auf Wunsch setzen wir besonders sanfte, hypoallergene Produkte ein, die auch für Allergiker geeignet sind.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="border-b border-gray-200 p-4">
+                        <h3 class="text-lg font-bold">Wie lange dauert eine Desinfektionsmaßnahme und kann ich die Räume danach sofort wieder nutzen?</h3>
+                    </div>
+                    <div class="p-4">
+                        <p>Die Dauer einer Desinfektionsmaßnahme hängt von der Größe der zu behandelnden Fläche und der Art der Desinfektion ab. Eine Standarddesinfektion von Büroflächen kann je nach Größe zwischen 1-3 Stunden dauern. Bei der Vernebelungstechnik sollten die Räume nach der Behandlung für etwa 1-2 Stunden gelüftet werden, bevor sie wieder genutzt werden. Wir planen die Arbeiten so, dass sie möglichst außerhalb Ihrer Geschäftszeiten stattfinden, um Unterbrechungen zu minimieren.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-6 bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="border-b border-gray-200 p-4">
+                        <h3 class="text-lg font-bold">Können Sie auch Spezialreinigungen für denkmalgeschützte Gebäude durchführen?</h3>
+                    </div>
+                    <div class="p-4">
+                        <p>Ja, wir haben Erfahrung mit der behutsamen Reinigung von denkmalgeschützten Gebäuden und historischen Fassaden. Hierbei verwenden wir besonders schonende Verfahren und spezielle Reinigungsmittel, die die historische Substanz nicht angreifen. Vor Beginn der Arbeiten stimmen wir uns eng mit den Denkmalschutzbehörden ab und berücksichtigen alle Auflagen und Vorgaben. Unser geschultes Personal ist mit den besonderen Anforderungen bei der Reinigung historischer Bausubstanz vertraut.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="border-b border-gray-200 p-4">
+                        <h3 class="text-lg font-bold">Erstellen Sie individuelle Angebote für Spezialreinigungen?</h3>
+                    </div>
+                    <div class="p-4">
+                        <p>Ja, wir erstellen für jede Spezialreinigung ein individuelles, auf Ihre spezifischen Anforderungen zugeschnittenes Angebot. Dafür führen wir in der Regel eine Vor-Ort-Besichtigung durch, um den genauen Umfang der Arbeiten zu ermitteln und die bestmögliche Reinigungsmethode festzulegen. So können wir Ihnen ein transparentes und faires Angebot unterbreiten, das genau auf Ihre Bedürfnisse abgestimmt ist. Kontaktieren Sie uns für eine unverbindliche Beratung und ein maßgeschneidertes Angebot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Kontakt</h2>
+                <p class="text-xl text-gray-600">Nehmen Sie Kontakt mit uns auf für ein unverbindliches Angebot</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6">Kontaktformular</h3>
+                        <form class="contact-form" id="rivog-contact-form">
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Anrede</label>
+                                    <select name="anrede">
+                                        <option>Frau</option>
+                                        <option>Herr</option>
+                                    </select>
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Firma</label>
+                                    <input type="text" name="firma" placeholder="Ihre Firma">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Vorname</label>
+                                    <input type="text" name="vorname" placeholder="Ihr Vorname">
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Nachname</label>
+                                    <input type="text" name="nachname" placeholder="Ihr Nachname">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">PLZ, Ort</label>
+                                    <input type="text" name="plz_ort" placeholder="PLZ, Ort">
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Funktion</label>
+                                    <input type="text" name="funktion" placeholder="Ihre Funktion">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">E-Mail</label>
+                                <input type="email" name="email" placeholder="Ihre E-Mail Adresse" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Telefon</label>
+                                <input type="tel" name="telefon" placeholder="Ihre Telefonnummer">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Ihr Anliegen</label>
+                                <select name="anliegen">
+                                    <option>Spezialreinigung</option>
+                                    <option>Fassadenreinigung</option>
+                                    <option>Industriereinigung</option>
+                                    <option>Andere Anfrage</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Ihre Mitteilung</label>
+                                <textarea rows="4" name="mitteilung" placeholder="Ihre Nachricht an uns"></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label class="flex items-center">
+                                    <input type="checkbox" name="datenschutz" class="mr-2" value="1" required>
+                                    <span class="text-sm">Ich habe die Datenschutzbestimmungen gelesen und akzeptiere diese.</span>
+                                </label>
+                            </div>
+                            <button type="submit" id="contact-submit-btn" class="w-full">Anfrage absenden</button>
+                        </form>
+                        <div id="contact-success-msg" style="display:none;"></div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Kontaktdaten</h3>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Adresse</h4>
+                                <address class="not-italic">
+                                    RIVOG AG<br>
+                                    Lagerstrasse 4<br>
+                                    9200 Gossau SG<br>
+                                    Schweiz
+                                </address>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Telefon</h4>
+                                <p>+41 71 511 13 03</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">E-Mail</h4>
+                                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bdd4d3dbd2fdcfd4cbd2da93ded5">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Öffnungszeiten</h4>
+                                <p>Montag - Freitag: 07:00 - 18:00 Uhr</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-6">Ihr Ansprechpartner</h3>
+                        <div class="flex items-center mb-6">
+                            <div class="w-20 h-20 rounded-full bg-gray-200 mr-4 flex items-center justify-center">
+                                <i class="fas fa-user text-gray-400 text-3xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Davor Juric</h4>
+                                <p class="text-gray-600">Spezialist für Spezialreinigung</p>
+                                <p class="text-gray-600">+41 71 511 13 03</p>
+                            </div>
+                        </div>
+                        <p class="mb-4">Unser Spezialist für anspruchsvolle Reinigungsprojekte berät Sie gerne persönlich zu allen Fragen der Spezialreinigung. Profitieren Sie von seiner langjährigen Erfahrung und seinem Fachwissen.</p>
+                        <a href="#contact" class="text-rivog-orange font-semibold hover:underline">Jetzt Kontakt aufnehmen <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 pt-12 pb-8">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="flex items-center mb-6">
+                        <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                        <h3 class="text-2xl font-bold">RIVOG AG</h3>
+                    </div>
+                    <p class="mb-6">Professionelle Facility Services mit Schweizer Qualität und Präzision. Unser umfangreiches Leistungsspektrum erlaubt Lösungen aus einer Hand.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=41797325493&text=Vielen%20Dank%20f%C3%BCr%20Ihr%20Interesse%20an%20der%20RIVOG.%20Stellen%20Sie%20Ihre%20Frage" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Dienstleistungen</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Unterhaltsreinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baureinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baustellenbewachung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Spezialreinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Umzug & Räumung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Kontakt</h4>
+                    <ul class="space-y-4">
+                        <li class="flex">
+                            <i class="fas fa-map-marker-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>RIVOG AG<br>Lagerstrasse 4<br>9200 Gossau SG</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-phone-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>+41 71 511 13 03</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-envelope text-rivog-orange mr-3 mt-1"></i>
+                            <span>info@rivog.ch</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-wrap justify-between">
+                <div class="w-full md:w-auto mb-4 md:mb-0">
+                    <p>&copy; 2025 RIVOG AG. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <ul class="flex flex-wrap space-x-4">
+                        <li><a href="Impressum.html" class="hover:text-rivog-orange">Impressum</a></li>
+                        <li><a href="Datenschutz.html" class="hover:text-rivog-orange">Datenschutz</a></li>
+                        <li><a href="#" id="admin-link" onclick="openLoginModal()">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-rivog-orange text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Structured Data - FAQs -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie oft sollte eine Fassadenreinigung durchgeführt werden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Häufigkeit der Fassadenreinigung hängt von verschiedenen Faktoren ab, wie der Art der Fassade, der Umgebung und der Witterung. In der Regel empfehlen wir eine Reinigung alle 2-5 Jahre. In städtischen Gebieten mit höherer Umweltbelastung oder bei Gebäuden, die starken Witterungseinflüssen ausgesetzt sind, kann eine häufigere Reinigung sinnvoll sein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Reinigungsmittel werden für die Teppich- und Polsterreinigung verwendet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für die Teppich- und Polsterreinigung verwenden wir speziell auf das Material abgestimmte, hochwertige und umweltfreundliche Reinigungsmittel. Diese entfernen effektiv Schmutz und Flecken, sind dabei aber schonend zu den Fasern und hinterlassen keine schädlichen Rückstände. Bei empfindlichen Materialien oder auf Wunsch setzen wir besonders sanfte, hypoallergene Produkte ein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert eine Desinfektionsmaßnahme und kann ich die Räume danach sofort wieder nutzen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Dauer einer Desinfektionsmaßnahme hängt von der Größe der zu behandelnden Fläche und der Art der Desinfektion ab. Eine Standarddesinfektion von Büroflächen kann je nach Größe zwischen 1-3 Stunden dauern. Bei der Vernebelungstechnik sollten die Räume nach der Behandlung für etwa 1-2 Stunden gelüftet werden, bevor sie wieder genutzt werden."
+          }
+        }
+      ]
+    }
+    </script>
+    <script>
+    // Kontaktformular AJAX-Versand
+    const form = document.getElementById('rivog-contact-form');
+    const btn = document.getElementById('contact-submit-btn');
+    const msg = document.getElementById('contact-success-msg');
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.textContent = 'Sende...';
+            btn.style.backgroundColor = '#e65c00';
+            const formData = new FormData(form);
+            fetch('assets/contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(r => r.json())
+            .then(data => {
+                if(data.success) {
+                    btn.textContent = 'Vielen Dank. Wir melden uns zeitnahe bei Ihnen.';
+                    btn.style.backgroundColor = '#22c55e';
+                    msg.style.display = 'block';
+                    msg.textContent = '';
+                    setTimeout(() => {
+                        btn.textContent = 'Anfrage absenden';
+                        btn.style.backgroundColor = '#ff6600';
+                        btn.disabled = false;
+                    }, 10000);
+                } else {
+                    btn.textContent = 'Anfrage absenden';
+                    btn.style.backgroundColor = '#ff6600';
+                    btn.disabled = false;
+                    msg.style.display = 'block';
+                    msg.textContent = data.message || 'Fehler beim Versand.';
+                    msg.style.color = '#dc2626';
+                    setTimeout(() => { msg.style.display = 'none'; }, 10000);
+                }
+            })
+            .catch(() => {
+                btn.textContent = 'Anfrage absenden';
+                btn.style.backgroundColor = '#ff6600';
+                btn.disabled = false;
+                msg.style.display = 'block';
+                msg.textContent = 'Fehler beim Versand.';
+                msg.style.color = '#dc2626';
+                setTimeout(() => { msg.style.display = 'none'; }, 10000);
+            });
+        });
+    }
+    </script>
+    <script>
+    // Hamburger-Menü für Mobilgeräte
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuBtn = document.querySelector('header .xl\\:hidden button');
+      const nav = document.querySelector('header nav');
+      if (!menuBtn || !nav) return;
+      let mobileNav = document.getElementById('mobile-nav');
+      if (!mobileNav) {
+        mobileNav = nav.cloneNode(true);
+        mobileNav.id = 'mobile-nav';
+        mobileNav.classList.remove('hidden', 'xl:block');
+        mobileNav.classList.add('block', 'xl:hidden', 'bg-white', 'shadow-md', 'absolute', 'top-full', 'right-0', 'left-0', 'z-40');
+        mobileNav.style.display = 'none';
+        nav.parentNode.appendChild(mobileNav);
+      }
+      menuBtn.addEventListener('click', function() {
+        if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+          mobileNav.style.display = 'block';
+        } else {
+          mobileNav.style.display = 'none';
+        }
+      });
+      mobileNav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+          mobileNav.style.display = 'none';
+        }
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) {
+          mobileNav.style.display = 'none';
+        }
+      });
+    });
+    </script>
+     <script>
+        // Hamburger-Menü für Mobilgeräte (Popup von unten, zentriert)
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuBtn = document.querySelector('header .xl\\:hidden button');
+          const nav = document.querySelector('header nav');
+          if (!menuBtn || !nav) return;
+          let mobileNav = document.getElementById('mobile-nav');
+          if (!mobileNav) {
+            mobileNav = nav.cloneNode(true);
+            mobileNav.id = 'mobile-nav';
+            mobileNav.classList.remove('hidden', 'xl:block');
+            // Remove all Tailwind classes, add our own
+            mobileNav.className = '';
+            mobileNav.style.display = 'none';
+            // Zentrierung und Layout wird über CSS geregelt
+            nav.parentNode.appendChild(mobileNav);
+          }
+          menuBtn.addEventListener('click', function() {
+            if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+              mobileNav.style.display = 'block';
+            } else {
+              mobileNav.style.display = 'none';
+            }
+          });
+          // Menü schließt sich beim Klick auf einen Link
+          mobileNav.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+              mobileNav.style.display = 'none';
+            }
+          });
+          // Bei Resize: Menü ausblenden, wenn wieder groß
+          window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) {
+              mobileNav.style.display = 'none';
+            }
+          });
+        });
+        </script>
+    <script>
+    // Check if the page is in editor mode
+    const urlParams = new URLSearchParams(window.location.search);
+    const isEditorMode = urlParams.get('editor') === 'true';
+
+    if (isEditorMode) {
+        // Enable TinyMCE for editable elements
+        tinymce.init({
+            selector: '[data-editable]',
+            inline: true,
+            menubar: false,
+            plugins: 'lists link',
+            toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright | bullist numlist | link',
+            contextmenu: false,
+            valid_elements: 'p,h1,h2,h3,h4,h5,h6,a[href],strong,em,ul,ol,li,br',
+            setup: editor => {
+                editor.on('focus', () => editor.getElement().classList.add('tinymce-active'));
+                editor.on('blur', () => editor.getElement().classList.remove('tinymce-active'));
+            }
+        });
+
+        // Add overlay for images
+        document.querySelectorAll('img').forEach(img => {
+            const overlay = document.createElement('div');
+            overlay.className = 'image-overlay';
+            overlay.innerHTML = '<button class="edit-button">Edit</button>';
+            img.parentNode.insertBefore(overlay, img.nextSibling);
+        });
+
+        // Add save button
+        const saveButton = document.createElement('button');
+        saveButton.id = 'save-button';
+        saveButton.textContent = 'Speichern';
+        saveButton.onclick = async () => {
+            const changes = [];
+            document.querySelectorAll('[data-editable]').forEach(el => {
+                const editor = tinymce.get(el.id);
+                if (editor) {
+                    changes.push({
+                        elementId: el.id,
+                        content: editor.getContent()
+                    });
+                }
+            });
+
+            try {
+                const response = await fetch('editor/save_content.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        page: window.location.pathname.split('/').pop(),
+                        changes: changes
+                    })
+                });
+                const data = await response.json();
+                if (data.success) {
+                    alert('Änderungen gespeichert!');
+                    window.location.href = window.location.pathname; // Reload live version
+                } else {
+                    alert('Fehler beim Speichern: ' + data.message);
+                }
+            } catch (error) {
+                alert('Fehler beim Speichern: ' + error.message);
+            }
+        };
+        document.body.appendChild(saveButton);
+    }
+</script>
+
+<nav>
+    <!-- Existing menu items -->
+    <ul>
+        <li><a href="Impressum.html">Impressum</a></li>
+        <li><a href="Datenschutz.html">Datenschutz</a></li>
+        <li><a href="#" id="admin-link" onclick="openLoginModal()">Admin</a></li>
+    </ul>
+</nav>
+
+<div id="login-modal" class="hidden">
+    <form id="login-form">
+        <label for="page-select">Seite wählen:</label>
+        <select id="page-select">
+            <option value="Spezialreinigung.html">Spezialreinigung</option>
+            <option value="Umzugsreinigung.html">Umzugsreinigung</option>
+            <option value="Unterhaltsreinigung.html">Unterhaltsreinigung</option>
+        </select>
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+    function openLoginModal() {
+        document.getElementById('login-modal').classList.remove('hidden');
+    }
+
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const selectedPage = document.getElementById('page-select').value;
+        const password = document.getElementById('password').value;
+
+        // Simulate login validation
+        if (password === 'admin') {
+            window.location.href = `${selectedPage}?editor=true`;
+        } else {
+            alert('Falsches Passwort!');
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIVOG AG | Professionelles Facility Management in der Schweiz | Reinigung &amp; Security</title>
+    <meta name="description" content="RIVOG AG bietet hochwertige Facility Services wie Geb&auml;udereinigung, Unterhaltsreinigung, Baureinigung, Security und Baustellenwartung in Gossau und der gesamten Schweiz. Kontaktieren Sie uns f&uuml;r ein unverbindliches Angebot.">
+    <meta name="keywords" content="Facility Management, Reinigungsfirma Gossau, Geb&auml;udereinigung Schweiz, Unterhaltsreinigung St. Gallen, Baureinigung, Baustellenbewachung, Security Service, Spezialreinigung">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/rivog-flag.bw_.png" type="image/png">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+    <!-- TinyMCE CDN -->
+    <script src="https://cdn.tiny.cloud/1/7g5ltgw0qzm8r0pil21dxwstebto81r5p9o26ecqjgxirkjf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Helvetica', 'Arial', sans-serif; color: #333; line-height: 1.6; }
+        .hero-section { background: linear-gradient(to right, #1a1a1a 50%, #ff6600 50%); min-height: 600px; }
+        .service-box { transition: transform 0.3s ease; }
+        .service-box:hover { transform: translateY(-5px); }
+        .bg-rivog-orange { background-color: #ff6600; }
+        .text-rivog-orange { color: #ff6600; }
+        .border-rivog-orange { border-color: #ff6600; }
+        .quality-icon {
+            width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            border: 1px solid #ccc; padding: 10px; width: 100%; margin-bottom: 15px; border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ff6600; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;
+        }
+        .contact-form button:hover { background-color: #e65c00; }
+        /* Justify center */
+        a.justify-center { top: 1601px; }
+        /* Mobile Nav Popup von unten */
+        #mobile-nav {
+            position: fixed !important; left: 0; right: 0; bottom: 0; top: auto; z-index: 9999; background: #fff;
+            box-shadow: 0 -8px 32px rgba(0,0,0,0.15); display: none; animation: slideUpMobileNav 0.35s cubic-bezier(0.4,0,0.2,1);
+        }
+        @keyframes slideUpMobileNav {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        #mobile-nav ul {
+            display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 40vh; gap: 2rem;
+        }
+        #mobile-nav ul li { width: 100%; text-align: center; }
+        #mobile-nav ul li a {
+            font-size: 1.5rem; font-weight: 600; color: #333; display: block; padding: 1rem 0; transition: color 0.2s;
+        }
+        #mobile-nav ul li a:hover { color: #ff6600; }
+
+        /* Editable Elements */
+        [data-editable] { position: relative; }
+        [data-editable]:hover:not(:focus) { outline: 2px dashed #ff6600; cursor: pointer; }
+        [data-editable].tinymce-active { outline: 2px solid #ff6600; }
+
+        /* Image Editing */
+        .image-container { position: relative; display: inline-block; }
+        .image-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); opacity: 0; transition: opacity 0.3s;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .image-container:hover .image-overlay { opacity: 1; }
+        .edit-image-btn {
+            background: #ff6600; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;
+        }
+        .edit-image-btn:hover { background: #e65c00; }
+    </style>
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RIVOG AG",
+      "image": "assets/img/rivog-flag.bw_.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lagerstrasse 4",
+        "addressLocality": "Gossau",
+        "postalCode": "9200",
+        "addressRegion": "SG",
+        "addressCountry": "CH"
+      },
+      "telephone": "+41 71 511 13 03",
+      "email": "info@rivog.ch",
+      "url": "https://www.rivog.ch",
+      "description": "Professionelles Facility Management mit Schweizer Qualit&auml;t. Unterhaltsreinigung, Baureinigung, Baustellenbewachung und mehr.",
+      "openingHours": "Mo-Fr 07:00-18:00",
+      "priceRange": "$$",
+      "areaServed": ["Gossau", "St. Gallen", "Z&uuml;rich", "Schweiz"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Facility Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Unterhaltsreinigung"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Baureinigung"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Security"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Baustellenwartung"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Spezialreinigung"}}
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <button onclick="debugEditor()" style="position:fixed; top:10px; right:10px; z-index:9999; background:#ff0000; color:white; padding:5px;">Debug Editor</button>
+
+    <!-- Header & Navigation -->
+    <header class="container mx-auto flex justify-between items-center px-4 py-3">
+        <div class="flex items-center">
+            <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+            <div>
+                <h1 class="text-xl font-bold">RIVOG AG</h1>
+                <p class="text-sm text-gray-600">Facility Services</p>
+            </div>
+        </div>
+        <nav class="hidden xl:block">
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-rivog-orange">Home</a></li>
+                <li><a href="#services" class="hover:text-rivog-orange">Dienstleistungen</a></li>
+                <li><a href="#about" class="hover:text-rivog-orange">&Uuml;ber uns</a></li>
+                <li><a href="#quality" class="hover:text-rivog-orange">Qualit&auml;t</a></li>
+                <li><a href="#contact" class="hover:text-rivog-orange">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="xl:hidden">
+            <button type="button" class="text-gray-600 hover:text-rivog-orange">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="main-edit">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container mx-auto px-4 py-16">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-1/2 py-8 flex items-center">
+                        <div class="text-white p-6 max-w-lg">
+                            <h1 id="editable-hero-title" class="text-4xl font-bold mb-4">Facility Services mit Schweizer Qualität</h1>
+                            <p id="editable-hero-text" class="text-xl mb-8">RIVOG AG - Ihr Partner für professionelles Facility Management in der Ostschweiz. Reinigung, Security und Baustellenwartung aus einer Hand.</p>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <a href="#contact" class="bg-rivog-orange text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-opacity-90">Angebot anfordern</a>
+                                <a href="#services" class="border border-white text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-white hover:text-gray-900">Unsere Dienstleistungen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 py-8 flex items-center justify-center">
+                        <div class="image-container">
+                            <img id="hero-image" src="http://localhost:8000/assets/img/happy-rivog-customer.png" alt="Zufriedene RIVOG Kunden" class="max-w-full h-auto rounded-lg shadow-xl">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-2">Unsere Dienstleistungen</h2>
+                    <p class="text-xl text-gray-600">Umfassendes Facility Management aus einer Hand</p>
+                    <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1: Unterhaltsreinigung -->
+                    <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="image-container">
+                            <img id="service-img-1" src="http://localhost:8000/assets/img/rivog-unterhaltsreinigung-3-Gro%C3%9F-1024x683.jpg" alt="Unterhaltsreinigung RIVOG AG" class="w-full h-48 object-cover">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Unterhaltsreinigung</h3>
+                            <p class="mb-4">Professionelle Reinigung von B&uuml;ror&auml;umen, Kantinen, Empfangshallen und mehr. Individuelle Intervalle nach Ihren Bed&uuml;rfnissen.</p>
+                            <ul class="mb-4 space-y-1">
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> B&uuml;rogeb&auml;ude</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Gastronomiebetriebe</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Arztpraxen</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Schulen und &Auml;mter</li>
+                            </ul>
+                            <a href="Unterhaltsreinigung.html" class="inline-block text-rivog-orange font-semibold hover:underline">Mehr erfahren <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Baureinigung -->
+                    <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="image-container">
+                            <img id="service-img-2" src="http://localhost:8000/assets/img/img_681accc62f263.jpg" alt="Baureinigung RIVOG AG" class="w-full h-48 object-cover">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Baureinigung</h3>
+                            <p class="mb-4">W&auml;hrend eines Baues entsteht viel Abfall. Wir sorgen f&uuml;r Sauberkeit w&auml;hrend und nach Abschluss der Bauarbeiten.</p>
+                            <ul class="mb-4 space-y-1">
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Regelm&auml;&szlig;ige Grobreinigung</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Abfallmanagement</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Reinigung von Baucontainern</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Wassersaugen und Pumpen</li>
+                            </ul>
+                            <a href="Baureinigung.html" class="inline-block text-rivog-orange font-semibold hover:underline">Mehr erfahren <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Security -->
+                    <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="image-container">
+                            <img id="service-img-3" src="http://localhost:8000/assets/img/img_6818604b7df5d.jpg" alt="Security Service RIVOG AG" class="w-full h-48 object-cover">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Baustellenbewachung</h3>
+                            <p class="mb-4">Schutz und Sicherheit f&uuml;r Ihre Baustelle. Wir &ouml;ffnen und schlie&szlig;en Ihre Baustelle und sch&uuml;tzen vor unbefugtem Zutritt.</p>
+                            <ul class="mb-4 space-y-1">
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> &Ouml;ffnen und Schlie&szlig;en</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Kontrolle aller Fenster</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Minimierung von Diebstahlrisiken</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Schutz vor Brandgefahren</li>
+                            </ul>
+                            <a href="Security.html" class="inline-block text-rivog-orange font-semibold hover:underline">Mehr erfahren <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Spezialreinigung -->
+                    <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="image-container">
+                            <img id="service-img-4" src="http://localhost:8000/assets/img/rivog-flag.bw_.png" alt="Spezialreinigung RIVOG AG" class="w-full h-48 object-cover object-center">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Spezialreinigung</h3>
+                            <p class="mb-4">Wir bieten professionelle L&ouml;sungen f&uuml;r besondere Reinigungsaufgaben mit speziellen Anforderungen.</p>
+                            <ul class="mb-4 space-y-1">
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Fassadenreinigung</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Industriereinigung</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Teppich- und Polsterreinigung</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Desinfektion und Hygiene</li>
+                            </ul>
+                            <a href="Spezialreinigung.html" class="inline-block text-rivog-orange font-semibold hover:underline">Mehr erfahren <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Umzugsreinigung -->
+                    <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="image-container">
+                            <img id="service-img-5" src="http://localhost:8000/assets/img/happyworkers-rivog.png" alt="Umzugsreinigung RIVOG AG" class="w-full h-48 object-cover">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Umzug &amp; R&auml;umung</h3>
+                            <p class="mb-4">Professionelle Unterst&uuml;tzung bei Ihrem Umzug und der R&auml;umung von Objekten. Stressfrei und effizient.</p>
+                            <ul class="mb-4 space-y-1">
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Umzugsreinigung mit Abnahmegarantie</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Endreinigung nach Auszug</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Wohnungsr&auml;umung</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Fachgerechte Entsorgung</li>
+                            </ul>
+                            <a href="Umzugsreinigung.html" class="inline-block text-rivog-orange font-semibold hover:underline">Mehr erfahren <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Consulting -->
+                    <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="image-container">
+                            <img id="service-img-6" src="http://localhost:8000/assets/img/RI-quality-1024x491.png" alt="Consulting RIVOG AG" class="w-full h-48 object-cover">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Consulting</h3>
+                            <p class="mb-4">Professionelle Beratung f&uuml;r optimale Facility Management L&ouml;sungen. Individuell auf Ihre Bed&uuml;rfnisse zugeschnitten.</p>
+                            <ul class="mb-4 space-y-1">
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Bedarfsanalyse</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Konzeptentwicklung</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Kostenoptimierung</li>
+                                <li class="flex items-center">
+<i class="fas fa-check text-rivog-orange mr-2"></i> Qualit&auml;tsmanagement</li>
+                            </ul>
+                            <a href="Consulting.html" class="inline-block text-rivog-orange font-semibold hover:underline">Mehr erfahren <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="#contact" class="bg-rivog-orange text-white py-3 px-8 rounded-md font-semibold inline-block hover:bg-opacity-90">Jetzt kostenlose Beratung anfragen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                        <div class="image-container">
+                            <img id="about-image" src="http://localhost:8000/assets/img/happyworkers-rivog.png" alt="RIVOG AG Team" class="rounded-lg shadow-xl max-w-full h-auto">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12">
+                        <h2 class="text-3xl font-bold mb-4">&Uuml;ber RIVOG AG</h2>
+                        <div class="w-16 h-1 bg-rivog-orange mb-6"></div>
+                        <p class="mb-6 text-lg">RIVOG AG Facility Services &ndash; unser Name steht f&uuml;r massgeschneidertes und kundenorientiertes Facility Management. Unser umfangreiches Leistungsspektrum erlaubt L&ouml;sungen aus einer Hand und macht die Suche nach mehreren Dienstleistern f&uuml;r unterschiedliche Aufgaben &uuml;berfl&uuml;ssig.</p>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold mb-3">Zufriedene Kunden</h3>
+                            <p class="mb-4">Die Bed&uuml;rfnisse und W&uuml;nsche unserer Kunden sind unser Massstab. Wir ruhen uns nicht auf unserer hohen Kundenzufriedenheitsrate aus, sondern entwickeln uns und unsere Dienstleistungen best&auml;ndig weiter aus.</p>
+                        </div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold mb-3">Motivierte Mitarbeiter</h3>
+                            <p class="mb-4">Um unsere motivierten Mitarbeiterinnen und Mitarbeiter werden wir in der Branche beneidet. Mit einer Entlohnung &uuml;ber Marktniveau, hohen Sicherheitsstandards und Weiterbildungsmassnahmen ist unser Team unser wichtigstes Kapital.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex items-center bg-gray-100 p-3 rounded-md">
+                                <i class="fas fa-users text-rivog-orange text-xl mr-3"></i>
+                                <div>
+                                    <span class="block text-2xl font-bold">50+</span>
+                                    <span class="text-sm text-gray-600">Mitarbeiter</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center bg-gray-100 p-3 rounded-md">
+                                <i class="fas fa-building text-rivog-orange text-xl mr-3"></i>
+                                <div>
+                                    <span class="block text-2xl font-bold">200+</span>
+                                    <span class="text-sm text-gray-600">Projekte</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center bg-gray-100 p-3 rounded-md">
+                                <i class="fas fa-calendar-check text-rivog-orange text-xl mr-3"></i>
+                                <div>
+                                    <span class="block text-2xl font-bold">5</span>
+                                    <span class="text-sm text-gray-600">Jahre Erfahrung</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality Section -->
+        <section id="quality" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-2">RIVOG Qualit&auml;t</h2>
+                    <p class="text-xl text-gray-600">Unsere Dienstleistungen sind auf den h&ouml;chstm&ouml;glichen Kundennutzen ausgerichtet</p>
+                    <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+                </div>
+
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                            <div class="quality-icon bg-rivog-orange text-white mb-6">
+                                <i class="fas fa-certificate text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-center">Schweizer Qualit&auml;t</h3>
+                            <p class="text-center">Alle unsere Leistungen werden mit Schweizer Qualit&auml;t und Pr&auml;zision ausgef&uuml;hrt. Wir machen keine Kompromisse.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                            <div class="quality-icon bg-rivog-orange text-white mb-6">
+                                <i class="fas fa-leaf text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-center">Umweltschutz</h3>
+                            <p class="text-center">Wir verwenden umweltfreundliche Reinigungsmittel und achten auf nachhaltige Prozesse zum Schutz unserer Umwelt.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                            <div class="quality-icon bg-rivog-orange text-white mb-6">
+                                <i class="fas fa-user-check text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-center">Zuverl&auml;ssigkeit</h3>
+                            <p class="text-center">Unsere Kunden verlassen sich auf unser Wort. Wir halten stets, was wir versprechen - p&uuml;nktlich und zuverl&auml;ssig.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md h-full">
+                            <div class="quality-icon bg-rivog-orange text-white mb-6">
+                                <i class="fas fa-tools text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-center">Moderne Technik</h3>
+                            <p class="text-center">Wir arbeiten mit modernsten Ger&auml;ten und Reinigungsmitteln f&uuml;r optimale Ergebnisse und effiziente Leistungserbringung.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex flex-wrap items-center">
+                        <div class="w-full lg:w-2/3 mb-8 lg:mb-0">
+                            <h3 class="text-2xl font-bold mb-4">RIQ - RIVOG Qualit&auml;tsprozess</h3>
+                            <p class="mb-6">Unser bew&auml;hrter Vier-Schritte-Prozess garantiert optimale Ergebnisse f&uuml;r Ihre Anforderungen:</p>
+                            <ol class="space-y-4">
+                                <li class="flex">
+                                    <div class="bg-rivog-orange text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                                    <div>
+                                        <strong class="block mb-1">Bedarfsanalyse:</strong>
+                                        <p>Wir analysieren Ihren Bedarf und den IST-Zustand gr&uuml;ndlich.</p>
+                                    </div>
+                                </li>
+                                <li class="flex">
+                                    <div class="bg-rivog-orange text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                                    <div>
+                                        <strong class="block mb-1">Konzept:</strong>
+                                        <p>Mit unserem Know-How erarbeiten wir ein passendes Konzept f&uuml;r Ihre spezifischen W&uuml;nsche und Anspr&uuml;che.</p>
+                                    </div>
+                                </li>
+                                <li class="flex">
+                                    <div class="bg-rivog-orange text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                                    <div>
+                                        <strong class="block mb-1">L&ouml;sung:</strong>
+                                        <p>Wir zeigen Ihnen die besten L&ouml;sungen auf und bieten unsere Dienstleistungen zu einem fairen Preis an.</p>
+                                    </div>
+                                </li>
+                                <li class="flex">
+                                    <div class="bg-rivog-orange text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                                    <div>
+                                        <strong class="block mb-1">Umsetzung:</strong>
+                                        <p>In der Umsetzung &uuml;berzeugen wir Sie durch unsere Qualit&auml;t. Die Qualit&auml;t ist das Produkt der Liebe zum Detail.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="w-full lg:w-1/3 flex justify-center">
+                            <div class="image-container">
+                                <img id="riq-logo" src="http://localhost:8000/assets/img/RIQ-logo-1024x856.png" alt="RIVOG Qualit&auml;tssiegel" class="max-w-full h-auto">
+                                <div class="image-overlay">
+                                    <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Environmental Policy -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                        <h2 class="text-3xl font-bold mb-4">Unsere Umweltpolitik</h2>
+                        <div class="w-16 h-1 bg-rivog-orange mb-6"></div>
+                        <p class="mb-6 text-lg">Als zukunftsorientiertes Unternehmen achten wir auf eine saubere Umwelt. Unsere Reinigungsmittel bestehen, wenn immer m&ouml;glich, aus abbaubaren Rohstoffen ohne umweltgef&auml;hrdende Chemikalien.</p>
+                        <p class="mb-6">Die Menge der eingesetzten Reinigungsmittel wird exakt auf das notwendige Mass beschr&auml;nkt. Und wenn die Beh&auml;lter leer sind? Dann entsorgen wir sie fachgerecht und ohne Belastungen f&uuml;r Mensch und Umwelt.</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <div class="bg-gray-100 p-4 rounded-lg flex items-center">
+                                <i class="fas fa-recycle text-rivog-orange text-2xl mr-3"></i>
+                                <span>Nachhaltige Entsorgung</span>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg flex items-center">
+                                <i class="fas fa-seedling text-rivog-orange text-2xl mr-3"></i>
+                                <span>Biologisch abbaubare Produkte</span>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg flex items-center">
+                                <i class="fas fa-tint-slash text-rivog-orange text-2xl mr-3"></i>
+                                <span>Wassersparende Verfahren</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center">
+                        <div class="image-container">
+                            <img id="env-image" src="http://localhost:8000/assets/img/Muelltuete-rivog.png" alt="RIVOG AG Umweltpolitik" class="max-w-full h-auto rounded-lg shadow-xl">
+                            <div class="image-overlay">
+                                <button class="edit-image-btn" aria-label="Bild bearbeiten">Bild &auml;ndern</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-2">Kontakt</h2>
+                    <p class="text-xl text-gray-600">Nehmen Sie Kontakt mit uns auf f&uuml;r ein unverbindliches Angebot</p>
+                    <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+                </div>
+
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                            <h3 class="text-2xl font-bold mb-6">Kontaktformular</h3>
+                            <form class="contact-form" id="rivog-contact-form">
+                                <div class="flex flex-wrap -mx-2">
+                                    <div class="w-full md:w-1/2 px-2 mb-4">
+                                        <label class="block mb-2">Anrede</label>
+                                        <select name="anrede">
+                                            <option>Frau</option>
+                                            <option>Herr</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-full md:w-1/2 px-2 mb-4">
+                                        <label class="block mb-2">Firma</label>
+                                        <input type="text" name="firma" placeholder="Ihre Firma">
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap -mx-2">
+                                    <div class="w-full md:w-1/2 px-2 mb-4">
+                                        <label class="block mb-2">Vorname</label>
+                                        <input type="text" name="vorname" placeholder="Ihr Vorname">
+                                    </div>
+                                    <div class="w-full md:w-1/2 px-2 mb-4">
+                                        <label class="block mb-2">Nachname</label>
+                                        <input type="text" name="nachname" placeholder="Ihr Nachname">
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap -mx-2">
+                                    <div class="w-full md:w-1/2 px-2 mb-4">
+                                        <label class="block mb-2">PLZ, Ort</label>
+                                        <input type="text" name="plz_ort" placeholder="PLZ, Ort">
+                                    </div>
+                                    <div class="w-full md:w-1/2 px-2 mb-4">
+                                        <label class="block mb-2">Funktion</label>
+                                        <input type="text" name="funktion" placeholder="Ihre Funktion">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block mb-2">E-Mail</label>
+                                    <input type="email" name="email" placeholder="Ihre E-Mail Adresse" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block mb-2">Telefon</label>
+                                    <input type="tel" name="telefon" placeholder="Ihre Telefonnummer">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block mb-2">Ihr Anliegen</label>
+                                    <select name="anliegen">
+                                        <option>Offertenanfrage</option>
+                                        <option>Initiativbewerbung</option>
+                                        <option>Mitteilung</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block mb-2">Ihre Mitteilung</label>
+                                    <textarea rows="4" name="mitteilung" placeholder="Ihre Nachricht an uns"></textarea>
+                                </div>
+                                <div class="mb-6">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="datenschutz" class="mr-2" value="1" required>
+                                        <span class="text-sm">Ich habe die Datenschutzbestimmungen gelesen und akzeptiere diese.</span>
+                                    </label>
+                                </div>
+                                <button type="submit" id="contact-submit-btn" class="w-full">Anfrage absenden</button>
+                            </form>
+                            <div id="contact-success-msg" style="display:none;"></div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                            <h3 class="text-2xl font-bold mb-6">Kontaktdaten</h3>
+                            <div class="flex mb-6">
+                                <div class="mr-4 text-rivog-orange">
+                                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Adresse</h4>
+                                    <address class="not-italic">
+                                        RIVOG AG<br>
+                                        Lagerstrasse 4<br>
+                                        9200 Gossau SG<br>
+                                        Schweiz
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="flex mb-6">
+                                <div class="mr-4 text-rivog-orange">
+                                    <i class="fas fa-phone-alt text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Telefon</h4>
+                                    <p>+41 71 511 13 03</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-6">
+                                <div class="mr-4 text-rivog-orange">
+                                    <i class="fas fa-envelope text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">E-Mail</h4>
+                                    <p>info@rivog.ch</p>
+                                </div>
+                            </div>
+                            <div class="flex mb-6">
+                                <div class="mr-4 text-rivog-orange">
+                                    <i class="fas fa-clock text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">&Ouml;ffnungszeiten</h4>
+                                    <p>Montag - Freitag: 07:00 - 18:00 Uhr</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-lg shadow-md relative" style="min-height: 500px;">
+                            <h3 class="text-2xl font-bold mb-6">Standort</h3>
+                            <div class="absolute inset-0 pt-16 px-8 pb-8">
+                                <div class="text-center p-4">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.0337238084553!2d9.272272613020041!3d47.41128337105234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ae1913a3623d1%3A0x9aabb64787f9c46e!2sRIVOG%20AG!5e0!3m2!1sde!2skr!4v1746242234641!5m2!1sde!2skr" width="600" height="450" style="border:0; width:100%; height:350px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white">
+            <div class="container mx-auto px-4 pt-12 pb-8">
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div class="flex items-center mb-6">
+                            <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                            <h3 class="text-2xl font-bold">RIVOG AG</h3>
+                        </div>
+                        <p class="mb-6">Professionelle Facility Services mit Schweizer Qualit&auml;t und Pr&auml;zision. Unser umfangreiches Leistungsspektrum erlaubt L&ouml;sungen aus einer Hand.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=41797325493&amp;text=Vielen%20Dank%20f%C3%BCr%20Ihr%20Interesse%20an%20der%20RIVOG.%20Stellen%20Sie%20Ihre%20Frage" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <h4 class="text-xl font-bold mb-6">Dienstleistungen</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Unterhaltsreinigung</a></li>
+                            <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baureinigung</a></li>
+                            <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baustellenbewachung</a></li>
+                            <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Spezialreinigung</a></li>
+                            <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Umzug &amp; R&auml;umung</a></li>
+                            <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Consulting</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <h4 class="text-xl font-bold mb-6">Kontakt</h4>
+                        <ul class="space-y-4">
+                            <li class="flex">
+                                <i class="fas fa-map-marker-alt text-rivog-orange mr-3 mt-1"></i>
+                                <span>RIVOG AG<br>Lagerstrasse 4<br>9200 Gossau SG</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-phone-alt text-rivog-orange mr-3 mt-1"></i>
+                                <span>+41 71 511 13 03</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fas fa-envelope text-rivog-orange mr-3 mt-1"></i>
+                                <span>info@rivog.ch</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 mt-8 pt-8 flex flex-wrap justify-between">
+                    <div class="w-full md:w-auto mb-4 md:mb-0">
+                        <p>&copy; 2025 RIVOG AG. Alle Rechte vorbehalten.</p>
+                    </div>
+                    <div class="w-full md:w-auto">
+                        <ul class="flex flex-wrap space-x-4">
+                            <li><a href="Impressum.html" class="hover:text-rivog-orange">Impressum</a></li>
+                            <li><a href="Datenschutz.html" class="hover:text-rivog-orange">Datenschutz</a></li>
+                            <li><a href="#" id="admin-link" onclick="openLoginModal()">Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <a href="#" class="fixed bottom-6 right-6 bg-rivog-orange text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90" aria-label="Nach oben scrollen">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+        <!-- Save Button (for admins) -->
+        <div id="save-button" class="hidden fixed bottom-6 left-6 bg-rivog-orange text-white py-2 px-4 rounded shadow-lg hover:bg-opacity-90">
+            Änderungen speichern
+        </div>
+
+        <!-- Admin Login Modal -->
+        <div id="admin-modal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center">
+            <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+                <h2 class="text-xl font-bold mb-4">Admin Login</h2>
+                <form id="admin-login-form">
+                    <div class="mb-4">
+                        <label for="username" class="block font-semibold">Username</label>
+                        <input type="text" id="username" name="username" class="w-full border px-3 py-2 rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block font-semibold">Password</label>
+                        <input type="password" id="password" name="password" class="w-full border px-3 py-2 rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="page-select" class="block font-semibold">Select Page</label>
+                        <select id="page-select" name="page" class="w-full border px-3 py-2 rounded">
+                            <option value="index.html">Home</option>
+                            <option value="Baureinigung.html">Baureinigung</option>
+                            <option value="Consulting.html">Consulting</option>
+                            <option value="Datenschutz.html">Datenschutz</option>
+                            <option value="Impressum.html">Impressum</option>
+                            <option value="Security.html">Security</option>
+                            <option value="Spezialreinigung.html">Spezialreinigung</option>
+                            <option value="Umzugsreinigung.html">Umzugsreinigung</option>
+                            <option value="Unterhaltsreinigung.html">Unterhaltsreinigung</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Login</button>
+                </form>
+                <button id="close-modal" class="mt-4 w-full bg-gray-600 text-white py-2 rounded hover:bg-gray-700">Close</button>
+            </div>
+        </div>
+
+        <!-- Structured Data - FAQs -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Welche Reinigungsdienstleistungen bietet RIVOG AG an?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RIVOG AG bietet ein umfassendes Spektrum an Reinigungsdienstleistungen wie Unterhaltsreinigung, Baureinigung, Spezialreinigung, Umzugsreinigung und mehr. Wir erstellen individuelle Reinigungskonzepte nach Ihren speziellen Anforderungen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "In welchen Regionen ist RIVOG AG t&auml;tig?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RIVOG AG ist haupts&auml;chlich in Gossau und der gesamten Ostschweiz t&auml;tig, bietet jedoch Dienstleistungen in der ganzen Schweiz an. Kontaktieren Sie uns f&uuml;r eine Beratung zu Ihrem spezifischen Standort."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was umfasst die Baustellenbewachung von RIVOG AG?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Unsere Baustellenbewachung umfasst das t&auml;gliche &Ouml;ffnen und Schlie&szlig;en Ihrer Baustelle, Kontrolle aller Fenster, Minimierung von Diebstahlrisiken und Schutz vor Brandgefahren. Wir sorgen f&uuml;r die Sicherheit Ihrer Baustelle au&szlig;erhalb der Arbeitszeiten."
+              }
+            }
+          ]
+        }
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Navigation
+    const setupMobileNav = () => {
+        const menuBtn = document.querySelector('header .xl\\:hidden button');
+        const nav = document.querySelector('header nav');
+        if (!menuBtn || !nav) return;
+        
+        let mobileNav = document.getElementById('mobile-nav');
+        if (!mobileNav) {
+            mobileNav = nav.cloneNode(true);
+            mobileNav.id = 'mobile-nav';
+            mobileNav.classList.remove('hidden', 'xl:block');
+            mobileNav.classList.add('block', 'xl:hidden', 'bg-white', 'shadow-md', 'absolute', 'top-full', 'right-0', 'left-0', 'z-40');
+            mobileNav.style.display = 'none';
+            nav.parentNode.appendChild(mobileNav);
+        }
+        
+        menuBtn.addEventListener('click', function() {
+            mobileNav.style.display = mobileNav.style.display === 'none' || mobileNav.style.display === '' ? 'block' : 'none';
+        });
+        
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.style.display = 'none';
+            });
+        });
+        
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 1280) {
+                mobileNav.style.display = 'none';
+            }
+        });
+    };
+    
+    // Admin Login Modal
+    const setupAdminModal = () => {
+        // Admin Link im Footer
+        document.getElementById('admin-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('admin-modal').classList.remove('hidden');
+        });
+        
+        // Modal schließen
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('admin-modal').classList.add('hidden');
+        });
+        
+        // Login-Formular
+        document.getElementById('admin-login-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const page = document.getElementById('page-select').value;
+            
+            try {
+                const response = await fetch('editor/login.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password, page })
+                });
+                
+                const result = await response.json();
+                if (result.success) {
+                    // Admin-Cookie setzen
+                    document.cookie = "admin=1; path=/; max-age=3600";
+                    
+                    // Modal schließen und Seite mit Editor-Parameter neu laden
+                    document.getElementById('admin-modal').classList.add('hidden');
+                    window.location.href = page + '?editor=true';
+                } else {
+                    alert('Login fehlgeschlagen: ' + (result.message || 'Ungültige Anmeldedaten'));
+                }
+            } catch (error) {
+                alert('Fehler bei der Anmeldung: Verbindungsproblem');
+                console.error('Login error:', error);
+            }
+        });
+    };
+    
+    // Kontaktformular
+    const setupContactForm = () => {
+        const form = document.getElementById('rivog-contact-form');
+        const btn = document.getElementById('contact-submit-btn');
+        const msg = document.getElementById('contact-success-msg');
+        
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                btn.disabled = true;
+                btn.textContent = 'Sende...';
+                btn.style.backgroundColor = '#e65c00';
+                
+                const formData = new FormData(form);
+                fetch('assets/contact.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(r => r.json())
+                .then(data => {
+                    if (data.success) {
+                        btn.textContent = 'Vielen Dank. Wir melden uns zeitnahe bei Ihnen.';
+                        btn.style.backgroundColor = '#22c55e';
+                        msg.style.display = 'block';
+                        msg.textContent = '';
+                        setTimeout(() => {
+                            btn.textContent = 'Anfrage absenden';
+                            btn.style.backgroundColor = '#ff6600';
+                            btn.disabled = false;
+                        }, 10000);
+                    } else {
+                        btn.textContent = 'Anfrage absenden';
+                        btn.style.backgroundColor = '#ff6600';
+                        btn.disabled = false;
+                        msg.style.display = 'block';
+                        msg.textContent = data.message || 'Fehler beim Versand.';
+                        msg.style.color = '#dc2626';
+                        setTimeout(() => { msg.style.display = 'none'; }, 10000);
+                    }
+                })
+                .catch(() => {
+                    btn.textContent = 'Anfrage absenden';
+                    btn.style.backgroundColor = '#ff6600';
+                    btn.disabled = false;
+                    msg.style.display = 'block';
+                    msg.textContent = 'Fehler beim Versand.';
+                    msg.style.color = '#dc2626';
+                    setTimeout(() => { msg.style.display = 'none'; }, 10000);
+                });
+            });
+        }
+    };
+    
+    // TinyMCE Editor initialisieren
+    const initializeEditor = () => {
+        // Prüfen, ob wir im Editor-Modus sind (URL-Parameter oder Cookie)
+        const urlParams = new URLSearchParams(window.location.search);
+        const isEditorMode = urlParams.get('editor') === 'true';
+        const isAdminCookie = document.cookie.includes('admin=1');
+        
+        if (isEditorMode && isAdminCookie) {
+            console.log("Editor wird initialisiert...");
+            
+            // Speichern-Button anzeigen
+            const saveButton = document.getElementById('save-button');
+            if (saveButton) {
+                saveButton.classList.remove('hidden');
+            }
+            
+            // Alle Überschriften und Absätze im Hauptbereich als editierbar markieren
+            const editableElements = document.querySelectorAll('#main-edit h1, #main-edit h2, #main-edit h3, #main-edit h4, #main-edit h5, #main-edit h6, #main-edit p');
+            console.log(`${editableElements.length} editierbare Elemente gefunden`);
+            
+            editableElements.forEach((el, index) => {
+                // Erstelle eine deterministische ID basierend auf der Position im DOM-Baum
+                if (!el.id) {
+                    const path = [];
+                    let node = el;
+                    while (node && node !== document.body) {
+                        const parent = node.parentNode;
+                        if (parent) {
+                            const children = Array.from(parent.children);
+                            const index = children.indexOf(node);
+                            path.unshift(node.tagName.toLowerCase() + '_' + index);
+                        }
+                        node = parent;
+                    }
+                    el.id = 'editable-' + path.join('-');
+                }
+                el.setAttribute('data-editable', '');
+                console.log(`Element ${index+1}: ID=${el.id}, Tag=${el.tagName}, Text=${el.innerText.substring(0, 20)}...`);
+            });
+            
+            // TinyMCE entfernen, falls bereits vorhanden
+            if (typeof tinymce !== 'undefined') {
+                tinymce.remove();
+                
+                // TinyMCE neu initialisieren
+                tinymce.init({
+                    selector: '[data-editable]',
+                    inline: true,
+                    menubar: false,
+                    plugins: 'lists link',
+                    toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright | bullist numlist | link',
+                    contextmenu: false,
+                    valid_elements: 'p,h1,h2,h3,h4,h5,h6,a[href],strong,em,ul,ol,li,br',
+                    force_p_newlines: true,
+                    forced_root_block: 'p',
+                    valid_children: '+body[p|h1|h2|h3|h4|h5|h6]',
+                    entity_encoding: 'raw',
+                    convert_urls: false,
+                    setup: function(editor) {
+                        editor.on('init', function() {
+                            console.log('TinyMCE initialisiert für ' + editor.id);
+                        });
+                        
+                        editor.on('focus', function() {
+                            editor.getElement().classList.add('tinymce-active');
+                        });
+                        
+                        editor.on('blur', function() {
+                            editor.getElement().classList.remove('tinymce-active');
+                        });
+                        
+                        // Verhindere komplexe Formatierungen
+                        editor.on('BeforeSetContent', function(e) {
+                            // Simple HTML-Struktur erzwingen
+                            e.content = e.content.replace(/<div[^>]*>/gi, '<p>');
+                            e.content = e.content.replace(/<\/div>/gi, '</p>');
+                        });
+                    }
+                });
+                
+                console.log("TinyMCE wurde initialisiert");
+            } else {
+                console.error("TinyMCE ist nicht verfügbar!");
+            }
+            
+            // Bildbearbeitung einrichten
+            setupImageEditing();
+            
+            // Speichern-Button-Funktion einrichten
+            setupSaveButton();
+        }
+    };
+    
+    // Bild-Bearbeitung einrichten
+    const setupImageEditing = () => {
+        // Alle Bilder im Hauptbereich verarbeiten (außer die mit .no-edit)
+        const images = document.querySelectorAll('#main-edit img:not(.no-edit)');
+        console.log(`${images.length} Bilder für Bearbeitung gefunden`);
+        
+        images.forEach((img, index) => {
+            // Sicherstellen, dass das Bild eine ID hat
+            if (!img.id) {
+                img.id = 'img-' + Math.random().toString(36).substr(2, 9);
+            }
+            console.log(`Bild ${index+1}: ID=${img.id}, Quelle=${img.src}`);
+            
+            // Prüfen, ob das Bild bereits in einem Image-Container ist
+            const container = img.closest('.image-container');
+            
+            if (container) {
+                // Sicherstellen, dass der Container ein Overlay hat
+                if (!container.querySelector('.image-overlay')) {
+                    const overlay = document.createElement('div');
+                    overlay.className = 'image-overlay';
+                    overlay.innerHTML = '<button class="edit-image-btn" aria-label="Bild bearbeiten">Bild ändern</button>';
+                    container.appendChild(overlay);
+                }
+            } else {
+                // Neuen Container für das Bild erstellen
+                const wrapper = document.createElement('div');
+                wrapper.className = 'image-container';
+                
+                // Den Wrapper einfügen und das Bild hineinverschieben
+                img.parentNode.insertBefore(wrapper, img);
+                wrapper.appendChild(img);
+                
+                // Overlay hinzufügen
+                const overlay = document.createElement('div');
+                overlay.className = 'image-overlay';
+                overlay.innerHTML = '<button class="edit-image-btn" aria-label="Bild bearbeiten">Bild ändern</button>';
+                wrapper.appendChild(overlay);
+            }
+        });
+        
+        // Event-Listener für Bild-Bearbeitung-Buttons
+        document.querySelectorAll('.edit-image-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const img = this.closest('.image-container').querySelector('img');
+                const input = document.createElement('input');
+                input.type = 'file';
+                input.accept = 'image/*';
+                
+                input.addEventListener('change', async function(e) {
+                    const file = e.target.files[0];
+                    if (file) {
+                        console.log(`Neues Bild ausgewählt: ${file.name}, Typ: ${file.type}, Größe: ${file.size} Bytes`);
+                        
+                        const formData = new FormData();
+                        formData.append('image', file);
+                        formData.append('oldImage', img.src);
+                        
+                        try {
+                            const response = await fetch('editor/upload.php', {
+                                method: 'POST',
+                                body: formData
+                            });
+                            
+                            const data = await response.json();
+                            console.log('Upload-Antwort:', data);
+                            
+                            if (data.success) {
+                                // Bild-URL mit Parameter für Cache-Kontrolle aktualisieren
+                                img.src = data.url + '?v=' + new Date().getTime();
+                                alert('Bild erfolgreich hochgeladen!');
+                            } else {
+                                alert('Fehler beim Upload: ' + data.message);
+                            }
+                        } catch (error) {
+                            console.error('Upload error:', error);
+                            alert('Fehler beim Upload: ' + error.message);
+                        }
+                    }
+                });
+                
+                input.click();
+            });
+        });
+    };
+    
+    // Speichern-Button einrichten
+    const setupSaveButton = () => {
+        const saveButton = document.getElementById('save-button');
+        if (saveButton) {
+            saveButton.addEventListener('click', async function() {
+                // Sammle Debug-Informationen
+                console.log("Speichern-Button geklickt");
+                
+                // Finde alle editierbaren Elemente
+                const editableElements = document.querySelectorAll('[data-editable]');
+                console.log(`${editableElements.length} editierbare Elemente gefunden`);
+                
+                editableElements.forEach((el, index) => {
+                    console.log(`Element ${index+1}: ID=${el.id}, Tag=${el.tagName}, Sichtbarer Text=${el.innerText.substring(0, 20)}...`);
+                });
+                
+                const changes = [];
+                
+                // Text-Änderungen von TinyMCE sammeln
+                document.querySelectorAll('[data-editable]').forEach(el => {
+                    const editor = tinymce.get(el.id);
+                    if (editor) {
+                        console.log(`Editor für ${el.id} gefunden, Content: ${editor.getContent().substring(0, 30)}...`);
+                        changes.push({
+                            elementId: el.id,
+                            content: editor.getContent()
+                        });
+                    } else {
+                        console.warn(`Kein Editor für ${el.id} gefunden!`);
+                    }
+                });
+                
+                // Bild-Änderungen sammeln
+                document.querySelectorAll('#main-edit img:not(.no-edit)').forEach(img => {
+                    // Nur die Basis-URL ohne Cache-Parameter speichern
+                    const srcWithoutParams = img.src.split('?')[0];
+                    changes.push({
+                        elementId: img.id,
+                        src: srcWithoutParams
+                    });
+                    console.log(`Bild ${img.id}: Quelle=${srcWithoutParams}`);
+                });
+                
+                console.log(`Insgesamt ${changes.length} Änderungen gesammelt`);
+                
+                try {
+                    console.log("Sende Änderungen an save_content.php");
+                    const requestData = {
+                        page: window.location.pathname.split('/').pop() || 'index.html',
+                        changes: changes
+                    };
+                    console.log("Request-Daten:", JSON.stringify(requestData).substring(0, 200) + "...");
+                    
+                    const response = await fetch('editor/save_content.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(requestData)
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP-Fehler: ${response.status}`);
+                    }
+                    
+                    const data = await response.json();
+                    console.log("Antwort erhalten:", data);
+                    
+                    if (data.success) {
+                        alert(`Änderungen wurden erfolgreich gespeichert! (${data.changesApplied || 0} Änderungen)`);
+                        
+                        // Seite ohne Editor-Parameter neu laden
+                        const currentUrl = new URL(window.location.href);
+                        currentUrl.searchParams.delete('editor');
+                        window.location.href = currentUrl.toString();
+                    } else {
+                        alert('Fehler beim Speichern: ' + (data.message || 'Unbekannter Fehler'));
+                        console.error("Fehlerdetails:", data.details);
+                    }
+                } catch (error) {
+                    console.error('Speichern fehlgeschlagen:', error);
+                    alert('Speichern fehlgeschlagen: ' + error.message);
+                }
+            });
+        }
+    };
+    
+    // Alle Funktionen initialisieren
+    setupMobileNav();
+    setupAdminModal();
+    setupContactForm();
+    
+    // Editor nach kurzem Delay initialisieren (sicherstellen, dass TinyMCE geladen ist)
+    setTimeout(initializeEditor, 500);
+});
+
+function debugEditor() {
+    console.clear();
+    console.log("==== DEBUG EDITOR ====");
+    
+    const editableElements = document.querySelectorAll('[data-editable]');
+    console.log(`${editableElements.length} editierbare Elemente gefunden`);
+    
+    editableElements.forEach((el, index) => {
+        console.log(`Element ${index+1}: ID=${el.id}, Tag=${el.tagName}, Text=${el.innerText.substring(0, 40)}...`);
+        const editor = tinymce.get(el.id);
+        if (editor) {
+            console.log(`  Editor aktiv: ja, Inhalt: ${editor.getContent().substring(0, 40)}...`);
+        } else {
+            console.log(`  Editor aktiv: NEIN`);
+        }
+    });
+    
+    // Test-Änderung an einem Element vornehmen
+    const testEl = document.querySelector('[data-editable]');
+    if (testEl) {
+        const editor = tinymce.get(testEl.id);
+        if (editor) {
+            const oldContent = editor.getContent();
+            console.log("Test-Änderung an Element: " + testEl.id);
+            console.log("Alter Inhalt: " + oldContent);
+            
+            const newContent = oldContent + " (TEST)";
+            editor.setContent(newContent);
+            console.log("Neuer Inhalt: " + editor.getContent());
+        }
+    }
+};
+
+       </script>
+            
+    </div>
+</body>
+</html>

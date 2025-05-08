@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | RIVOG AG</title>
+    <link rel="icon" href="assets/img/rivog-flag.bw_.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        /* Mobile Nav Popup von unten */
+        #mobile-nav {
+            position: fixed !important;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: auto;
+            z-index: 9999;
+            background: #fff;
+            box-shadow: 0 -8px 32px rgba(0,0,0,0.15);
+            display: none;
+            animation: slideUpMobileNav 0.35s cubic-bezier(0.4,0,0.2,1);
+        }
+        @keyframes slideUpMobileNav {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        #mobile-nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
+            gap: 2rem;
+        }
+        #mobile-nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+        #mobile-nav ul li a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            display: block;
+            padding: 1rem 0;
+            transition: color 0.2s;
+        }
+        #mobile-nav ul li a:hover {
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header & Navigation wie auf den anderen Seiten -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <div class="flex items-center">
+                <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold">RIVOG AG</h1>
+                    <p class="text-sm text-gray-600">Facility Services</p>
+                </div>
+            </div>
+            <nav class="hidden xl:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-rivog-orange">Home</a></li>
+                    <li><a href="index.html#services" class="hover:text-rivog-orange">Dienstleistungen</a></li>
+                    <li><a href="index.html#about" class="hover:text-rivog-orange">Über uns</a></li>
+                    <li><a href="index.html#quality" class="hover:text-rivog-orange">Qualität</a></li>
+                    <li><a href="index.html#contact" class="hover:text-rivog-orange">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="xl:hidden">
+                <button type="button" class="text-gray-600 hover:text-rivog-orange">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-3xl bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Impressum</h2>
+
+            <h3 class="text-xl font-bold mb-2 mt-6">Kontakt-Adresse</h3>
+            <p class="mb-2">RIVOG AG<br>Lagerstrasse 4<br>9200 Gossau<br>Schweiz</p>
+            <p class="mb-6">E-Mail: <a href="mailto:info@rivog.ch" class="text-rivog-orange hover:underline">info@rivog.ch</a></p>
+
+            <h3 class="text-xl font-bold mb-2 mt-6">Haftungsausschluss</h3>
+            <p class="mb-4">Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen.</p>
+            <p class="mb-4">Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen.</p>
+            <p class="mb-6">Alle Angebote sind unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne besondere Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</p>
+
+            <h3 class="text-xl font-bold mb-2 mt-6">Haftungsausschluss für Links</h3>
+            <p class="mb-6">Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des jeweiligen Nutzers.</p>
+
+            <h3 class="text-xl font-bold mb-2 mt-6">Urheberrechte</h3>
+            <p class="mb-4">Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website, gehören ausschliesslich der Firma RIVOG AG oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.</p>
+        </div>
+    </section>
+
+    <!-- Footer wie auf den anderen Seiten -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 pt-12 pb-8">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="flex items-center mb-6">
+                        <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                        <h3 class="text-2xl font-bold">RIVOG AG</h3>
+                    </div>
+                    <p class="mb-6">Professionelle Facility Services mit Schweizer Qualität und Präzision. Unser umfangreiches Leistungsspektrum erlaubt Lösungen aus einer Hand.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=41797325493&text=Vielen%20Dank%20f%C3%BCr%20Ihr%20Interesse%20an%20der%20RIVOG.%20Stellen%20Sie%20Ihre%20Frage" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Dienstleistungen</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Unterhaltsreinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baureinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baustellenbewachung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Spezialreinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Umzug & Räumung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Kontakt</h4>
+                    <ul class="space-y-4">
+                        <li class="flex">
+                            <i class="fas fa-map-marker-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>RIVOG AG<br>Lagerstrasse 4<br>9200 Gossau SG</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-phone-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>+41 71 511 13 03</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-envelope text-rivog-orange mr-3 mt-1"></i>
+                            <span>info@rivog.ch</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-wrap justify-between">
+                <div class="w-full md:w-auto mb-4 md:mb-0">
+                    <p>&copy; 2025 RIVOG AG. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <ul class="flex flex-wrap space-x-4">
+                        <li><a href="Impressum.html" class="hover:text-rivog-orange">Impressum</a></li>
+                        <li><a href="Datenschutz.html" class="hover:text-rivog-orange">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="fixed bottom-6 right-6 bg-rivog-orange text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+    // Hamburger-Menü für Mobilgeräte (Popup von unten, zentriert)
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuBtn = document.querySelector('header .xl\\:hidden button');
+      const nav = document.querySelector('header nav');
+      if (!menuBtn || !nav) return;
+      let mobileNav = document.getElementById('mobile-nav');
+      if (!mobileNav) {
+        mobileNav = nav.cloneNode(true);
+        mobileNav.id = 'mobile-nav';
+        mobileNav.classList.remove('hidden', 'xl:block');
+        mobileNav.classList.add('block', 'xl:hidden', 'bg-white', 'shadow-md', 'absolute', 'top-full', 'right-0', 'left-0', 'z-40');
+        // Remove all Tailwind classes, add our own
+        mobileNav.className = '';
+        mobileNav.style.display = 'none';
+        // Zentrierung und Layout wird über CSS geregelt
+        nav.parentNode.appendChild(mobileNav);
+      }
+      menuBtn.addEventListener('click', function() {
+        if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+          mobileNav.style.display = 'block';
+        } else {
+          mobileNav.style.display = 'none';
+        }
+      });
+      // Menü schließt sich beim Klick auf einen Link
+      mobileNav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+          mobileNav.style.display = 'none';
+        }
+      });
+      // Bei Resize: Menü ausblenden, wenn wieder groß
+      window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) {
+          mobileNav.style.display = 'none';
+        }
+      });
+    });
+
+    // Check if the page is in editor mode
+    const urlParams = new URLSearchParams(window.location.search);
+    const isEditorMode = urlParams.get('editor') === 'true';
+
+    if (isEditorMode) {
+        // Hide the Admin button and show the Save button
+        document.getElementById('admin-link').classList.add('hidden');
+        document.getElementById('save-button').classList.remove('hidden');
+
+        // Enable TinyMCE for editable elements
+        tinymce.init({
+            selector: '[data-editable]',
+            inline: true,
+            menubar: false,
+            plugins: 'lists link',
+            toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright | bullist numlist | link',
+            contextmenu: false,
+            valid_elements: 'p,h1,h2,h3,h4,h5,h6,a[href],strong,em,ul,ol,li,br',
+            setup: editor => {
+                editor.on('focus', () => editor.getElement().classList.add('tinymce-active'));
+                editor.on('blur', () => editor.getElement().classList.remove('tinymce-active'));
+            }
+        });
+
+        // Handle Save button click
+        document.getElementById('save-button').addEventListener('click', async () => {
+            const changes = [];
+            document.querySelectorAll('[data-editable]').forEach(el => {
+                const editor = tinymce.get(el.id);
+                if (editor) {
+                    changes.push({
+                        elementId: el.id,
+                        content: editor.getContent()
+                    });
+                }
+            });
+
+            document.querySelectorAll('img:not(.no-edit)').forEach(img => {
+                changes.push({
+                    elementId: img.id,
+                    src: img.src
+                });
+            });
+
+            try {
+                const response = await fetch('editor/save_content.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        page: window.location.pathname.split('/').pop(),
+                        changes: changes
+                    })
+                });
+                const data = await response.json();
+                if (data.success) {
+                    alert('Changes saved successfully!');
+                    window.location.href = window.location.pathname; // Reload live version
+                } else {
+                    alert('Error saving changes: ' + data.message);
+                }
+            } catch (error) {
+                alert('Error saving changes: ' + error.message);
+            }
+        });
+    }
+    </script>
+</body>
+</html>

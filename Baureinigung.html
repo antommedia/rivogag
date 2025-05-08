@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baureinigung | RIVOG AG | Professionelle Baustellen- und Neubaureinigung in Gossau, St. Gallen</title>
+    <meta name="description" content="Professionelle Baureinigung und Bauendreinigung von RIVOG AG in Gossau und der gesamten Schweiz. Wir sorgen für Sauberkeit auf Ihrer Baustelle während und nach Abschluss der Bauarbeiten. ✓ Grobreinigung ✓ Abfallmanagement ✓ Höchste Qualität">
+    <meta name="keywords" content="Baureinigung, Bauendreinigung, Baustelle Reinigung, Gossau, St. Gallen, Schweiz, Baustellenreinigung, Neubaureinigung, Abfallmanagement, Facility Services, RIVOG AG">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://rivog.ch/wp-content/uploads/2020/06/rivog-flag.bw_.png" type="image/png">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(to right, #1a1a1a 50%, #ff6600 50%);
+            min-height: 600px;
+        }
+        .service-box {
+            transition: transform 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+        .bg-rivog-orange {
+            background-color: #ff6600;
+        }
+        .text-rivog-orange {
+            color: #ff6600;
+        }
+        .border-rivog-orange {
+            border-color: #ff6600;
+        }
+        .quality-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ff6600;
+        }
+        .process-step {
+            position: relative;
+            padding-left: 3rem;
+        }
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #ff6600;
+        }
+        .process-step:last-child::before {
+            height: 50%;
+        }
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: #ff6600;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Baureinigung",
+      "serviceType": "Baustellenreinigung",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "RIVOG AG",
+        "image": "https://rivog.ch/wp-content/uploads/2020/06/rivog-flag.bw_.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lagerstrasse 4",
+          "addressLocality": "Gossau",
+          "postalCode": "9200",
+          "addressRegion": "SG",
+          "addressCountry": "CH"
+        },
+        "telephone": "+41 71 511 13 03",
+        "email": "info@rivog.ch",
+        "url": "https://www.rivog.ch"
+      },
+      "areaServed": ["Gossau", "St. Gallen", "Zürich", "Schweiz"],
+      "description": "Professionelle Baureinigung von RIVOG AG. Wir sorgen für Sauberkeit während und nach Abschluss der Bauarbeiten mit regelmäßiger Grobreinigung, Abfallmanagement und mehr.",
+      "offers": {
+        "@type": "Offer",
+        "price": "Auf Anfrage",
+        "priceCurrency": "CHF"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <div class="flex items-center">
+                <a href="index.html">
+                    <img src="https://rivog.ch/wp-content/uploads/2020/06/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                </a>
+                <div>
+                    <h1 class="text-xl font-bold">RIVOG AG</h1>
+                    <p class="text-sm text-gray-600">Facility Services</p>
+                </div>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-rivog-orange">Home</a></li>
+                    <li><a href="index.html#services" class="hover:text-rivog-orange">Dienstleistungen</a></li>
+                    <li><a href="index.html#about" class="hover:text-rivog-orange">Über uns</a></li>
+                    <li><a href="index.html#quality" class="hover:text-rivog-orange">Qualität</a></li>
+                    <li><a href="#contact" class="hover:text-rivog-orange">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <button type="button" class="text-gray-600 hover:text-rivog-orange">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-rivog-orange">Home</a>
+                <span class="mx-2">/</span>
+                <a href="index.html#services" class="text-gray-600 hover:text-rivog-orange">Dienstleistungen</a>
+                <span class="mx-2">/</span>
+                <span class="text-rivog-orange font-medium">Baureinigung</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Professionelle Baureinigung</h1>
+                    <p class="text-xl text-gray-300 mb-8">Sauberkeit während und nach dem Bauprozess – für einen perfekten Abschluss Ihres Bauprojekts</p>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <a href="#contact" class="bg-rivog-orange text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-opacity-90">Kostenlose Beratung</a>
+                        <a href="#services" class="border border-white text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-white hover:text-gray-900">Leistungen entdecken</a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <img src="https://rivog.ch/wp-content/uploads/2020/06/rivog-baustelle-in-hand.jpg" alt="Baureinigung von RIVOG AG" class="rounded-lg shadow-xl max-w-full h-auto mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <!-- Main Content -->
+                <div class="w-full lg:w-2/3 px-4">
+                    <h2 class="text-3xl font-bold mb-6">Baureinigung von RIVOG AG</h2>
+                    <div class="w-20 h-1 bg-rivog-orange mb-8"></div>
+                    
+                    <p class="mb-6 text-lg">Während eines Baues entsteht oftmals viel Abfall. Eine Baustelle ist gegenüber dem zukünftigen Mieter, Käufer und Bauherren ein repräsentativer Ort. Damit es weniger Abfallhaufen gibt, stellen wir unsere professionelle Abfallinsel auf. Der Unterhalt vom Gebäude beginnt schon während der Bauphase.</p>
+                    
+                    <p class="mb-8">Eine saubere und gut organisierte Baustelle ist nicht nur ein Zeichen für Professionalität, sondern erhöht auch die Arbeitssicherheit und ermöglicht einen reibungslosen Bauablauf. Mit unseren spezialisierten Reinigungsteams sorgen wir dafür, dass Ihre Baustelle kontinuierlich sauber und ordentlich bleibt – vom ersten Spatenstich bis zur Schlüsselübergabe.</p>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Unsere Baureinigungsleistungen im Überblick</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <div>
+                                    <strong class="block">Regelmäßige Grobreinigung</strong>
+                                    <p>Entfernung von Bauschutt und Abfall zur Aufrechterhaltung der Sicherheit und Ordnung</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <div>
+                                    <strong class="block">Abfallinsel und -management</strong>
+                                    <p>Aufstellen, Leeren und Entsorgen von Abfallinseln mit PET, Aschenbechern und KVA</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <div>
+                                    <strong class="block">Reinigung von Baucontainern</strong>
+                                    <p>Regelmäßige Säuberung der Baucontainer und provisorischen WC-Anlagen</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <div>
+                                    <strong class="block">Schliessdienst</strong>
+                                    <p>Zuverlässiges Abschließen der Baustelle zum Schutz vor unbefugtem Zutritt</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <div>
+                                    <strong class="block">Stosslüften und Fenster schliessen</strong>
+                                    <p>Regelmäßiges Lüften und sicheres Verschließen aller Fenster am Abend</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                <div>
+                                    <strong class="block">Wassersaugen und pumpen</strong>
+                                    <p>Entfernung von Wasser bei Überschwemmungen oder Regeneintritt</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-4">Phasen der Baureinigung</h3>
+                    <div class="mb-8">
+                        <div class="flex flex-wrap -mx-4 mb-6">
+                            <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+                                <div class="bg-gray-100 h-full p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold mb-3">Baubegleitende Reinigung</h4>
+                                    <p>Während des gesamten Bauprozesses sorgen wir für Ordnung und Sauberkeit auf der Baustelle. Dies erhöht die Arbeitssicherheit und vermeidet Behinderungen im Bauablauf. Regelmäßiges Entfernen von Bauschutt und Verpackungsmaterial hält die Wege frei und reduziert Unfallrisiken.</p>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 px-4">
+                                <div class="bg-gray-100 h-full p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold mb-3">Bauendreinigung</h4>
+                                    <p>Nach Abschluss aller Bauarbeiten führen wir eine gründliche Endreinigung durch. Hierbei werden sämtliche Baurückstände entfernt und alle Oberflächen gereinigt. Die Bauendreinigung umfasst die Reinigung aller Räume, Fenster, Böden und sanitären Anlagen – für eine einwandfreie Übergabe an den Bauherrn oder Mieter.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-4">Die Vorteile unserer Baureinigung</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-shield-alt feature-icon"></i>
+                                <h4 class="text-xl font-bold">Erhöhte Sicherheit</h4>
+                            </div>
+                            <p>Eine saubere Baustelle reduziert Unfallrisiken erheblich und schützt Ihre Mitarbeiter und Besucher.</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-chart-line feature-icon"></i>
+                                <h4 class="text-xl font-bold">Effizientere Arbeitsabläufe</h4>
+                            </div>
+                            <p>Ordnung und Sauberkeit ermöglichen einen reibungslosen Bauprozess ohne Behinderungen durch Bauschutt.</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-clock feature-icon"></i>
+                                <h4 class="text-xl font-bold">Zeitersparnis</h4>
+                            </div>
+                            <p>Ihre Handwerker können sich auf ihre Kernaufgaben konzentrieren, während wir uns um die Reinigung kümmern.</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-thumbs-up feature-icon"></i>
+                                <h4 class="text-xl font-bold">Professioneller Eindruck</h4>
+                            </div>
+                            <p>Eine saubere Baustelle hinterlässt bei Kunden, Bauherren und Behörden einen positiven und professionellen Eindruck.</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-4">Unser Baureinigungsprozess</h3>
+                    <div class="mb-8">
+                        <div class="mb-6">
+                            <div class="process-step py-2 mb-6">
+                                <div class="step-number">1</div>
+                                <h4 class="text-xl font-bold">Bestandsaufnahme und Beratung</h4>
+                                <p>Wir besichtigen Ihre Baustelle und erstellen einen detaillierten Reinigungsplan, der auf Ihre spezifischen Anforderungen zugeschnitten ist.</p>
+                            </div>
+                            <div class="process-step py-2 mb-6">
+                                <div class="step-number">2</div>
+                                <h4 class="text-xl font-bold">Abstimmung der Reinigungsintervalle</h4>
+                                <p>Je nach Baufortschritt und Verschmutzungsgrad legen wir gemeinsam mit Ihnen die optimalen Reinigungsintervalle fest.</p>
+                            </div>
+                            <div class="process-step py-2 mb-6">
+                                <div class="step-number">3</div>
+                                <h4 class="text-xl font-bold">Durchführung der Reinigungsarbeiten</h4>
+                                <p>Unser geschultes Personal führt die vereinbarten Reinigungsarbeiten zuverlässig und effizient durch.</p>
+                            </div>
+                            <div class="process-step py-2">
+                                <div class="step-number">4</div>
+                                <h4 class="text-xl font-bold">Qualitätskontrolle</h4>
+                                <p>Nach jeder Reinigung erfolgt eine gründliche Kontrolle, um sicherzustellen, dass alle Arbeiten zur vollsten Zufriedenheit ausgeführt wurden.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-rivog-orange text-white p-8 rounded-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Warum RIVOG AG für Ihre Baureinigung wählen?</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Jahrelange Erfahrung in der professionellen Baureinigung</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Geschultes und zuverlässiges Personal</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Modernste Reinigungsgeräte und -mittel</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Umweltfreundliche Reinigungsprodukte</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Flexible Reinigungszeiten – auch außerhalb der regulären Arbeitszeiten</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Transparente Preisgestaltung ohne versteckte Kosten</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="#contact" class="bg-white text-rivog-orange py-3 px-6 rounded-md font-semibold inline-block hover:bg-gray-100">Jetzt Angebot anfordern</a>
+                        </div>
+                    </div>
+                    
+                    <div id="services" class="mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Weitere Reinigungsdienstleistungen der RIVOG AG</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <a href="#" class="block bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-broom text-rivog-orange text-xl mr-3"></i>
+                                    <span class="font-semibold">Unterhaltsreinigung</span>
+                                </div>
+                            </a>
+                            <a href="#" class="block bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-user-shield text-rivog-orange text-xl mr-3"></i>
+                                    <span class="font-semibold">Baustellenbewachung</span>
+                                </div>
+                            </a>
+                            <a href="#" class="block bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-spray-can text-rivog-orange text-xl mr-3"></i>
+                                    <span class="font-semibold">Spezialreinigung</span>
+                                </div>
+                            </a>
+                            <a href="#" class="block bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-truck-loading text-rivog-orange text-xl mr-3"></i>
+                                    <span class="font-semibold">Umzug & Räumung</span>
+                                </div>
+                            </a>
+                            <a href="#" class="block bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-tasks text-rivog-orange text-xl mr-3"></i>
+                                    <span class="font-semibold">Facility Management</span>
+                                </div>
+                            </a>
+                            <a href="#" class="block bg-gray-100 p-4 rounded-lg hover:bg-gray-200 transition-colors">
+                                <div class="flex items-center">
+                                    <i class="fas fa-handshake text-rivog-orange text-xl mr-3"></i>
+                                    <span class="font-semibold">Consulting</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="w-full lg:w-1/3 px-4 mt-10 lg:mt-0">
+                    <div class="sticky top-24">
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-sm mb-8">
+                            <h3 class="text-xl font-bold mb-4">Kontaktieren Sie uns</h3>
+                            <p class="mb-6">Gerne beraten wir Sie persönlich zu unseren Baureinigungsleistungen und erstellen ein individuelles Angebot für Ihre Baustelle.</p>
+                            <a href="#contact" class="bg-rivog-orange text-white py-3 px-6 rounded-md font-semibold block text-center hover:bg-opacity-90">Anfrage senden</a>
+                        </div>
+                        
+                        <div class="bg-white border border-gray-200 p-6 rounded-lg shadow-sm mb-8">
+                            <h3 class="text-xl font-bold mb-4">Unsere Referenzen</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-quote-left text-rivog-orange text-3xl mr-4"></i>
+                                    <div>
+                                        <p class="italic">"Die Baureinigung durch RIVOG AG hat uns überzeugt. Zuverlässig, gründlich und flexibel."</p>
+                                        <p class="text-sm text-gray-600 mt-2">- Bauunternehmen aus St. Gallen</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-quote-left text-rivog-orange text-3xl mr-4"></i>
+                                    <div>
+                                        <p class="italic">"Dank RIVOG war unsere Großbaustelle stets sauber und sicher. Klare Empfehlung!"</p>
+                                        <p class="text-sm text-gray-600 mt-2">- Immobilienentwickler aus Gossau</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-bold mb-4">FAQ zur Baureinigung</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-bold">Wie oft sollte eine Baustelle gereinigt werden?</h4>
+                                    <p class="text-sm mt-1">Je nach Größe und Art der Baustelle empfehlen wir eine tägliche bis wöchentliche Reinigung. Wir beraten Sie gerne individuell.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Was kostet eine professionelle Baureinigung?</h4>
+                                    <p class="text-sm mt-1">Die Kosten hängen von verschiedenen Faktoren ab, wie Größe der Baustelle, Verschmutzungsgrad und Häufigkeit der Reinigung. Kontaktieren Sie uns für ein individuelles Angebot.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Übernehmen Sie auch die Entsorgung von Baumaterialien?</h4>
+                                    <p class="text-sm mt-1">Ja, wir bieten ein komplettes Abfallmanagement für Baustellen an, inklusive fachgerechter Entsorgung von Baumaterialien.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Arbeiten Sie auch an Wochenenden?</h4>
+                                    <p class="text-sm mt-1">Ja, unsere Reinigungsteams sind flexibel einsetzbar, auch an Wochenenden oder außerhalb regulärer Arbeitszeiten.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-rivog-orange py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Bereit für eine saubere Baustelle?</h2>
+            <p class="text-white text-xl mb-8">Kontaktieren Sie uns noch heute für eine unverbindliche Beratung und ein massgeschneidertes Angebot.</p>
+            <a href="#contact" class="bg-white text-rivog-orange py-3 px-8 rounded-md font-semibold inline-block hover:bg-gray-100">Jetzt Kontakt aufnehmen</a>
+        </div>
+    </section>
+
+    <!-- RIVOG Qualitätsprozess -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">RIQ - RIVOG Qualitätsprozess</h2>
+                <p class="text-xl text-gray-600">So gehen wir für Sie vor:</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-2/3 mb-8 lg:mb-0">
+                    <ol class="space-y-6">
+                        <li class="flex">
+                            <div class="bg-rivog-orange text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                            <div>
+                                <strong class="block text-xl mb-2">Bedarfsanalyse:</strong>
+                                <p>Wir analysieren Ihren Bedarf und den IST-Zustand Ihrer Baustelle gründlich, um einen maßgeschneiderten Reinigungsplan zu erstellen.</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="bg-rivog-orange text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                            <div>
+                                <strong class="block text-xl mb-2">Konzept:</strong>
+                                <p>Mit unserem Know-How erarbeiten wir ein passendes Konzept für Ihren Bedarf. Bei der Erstellung achten wir auf Ihre Wünsche und Ansprüche.</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="bg-rivog-orange text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                            <div>
+                                <strong class="block text-xl mb-2">Lösung:</strong>
+                                <p>Wir zeigen Ihnen die besten Lösungen auf und bieten unsere Dienstleistungen zu einem fairen Preis an.</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <div class="bg-rivog-orange text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                            <div>
+                                <strong class="block text-xl mb-2">Umsetzung:</strong>
+                                <p>In der Umsetzung überzeugen wir Sie durch unsere Qualität. Die Qualität ist das Produkt der Liebe zum Detail.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="w-full lg:w-1/3 flex justify-center">
+                    <img src="https://rivog.ch/wp-content/uploads/2020/06/RIQ-logo-1024x856.png" alt="RIVOG Qualitätssiegel" class="max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Kontakt</h2>
+                <p class="text-xl text-gray-600">Nehmen Sie Kontakt mit uns auf für ein unverbindliches Angebot zur Baureinigung</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6">Kontaktformular</h3>
+                        <form class="contact-form">
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Anrede</label>
+                                    <select>
+                                        <option>Frau</option>
+                                        <option>Herr</option>
+                                    </select>
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Firma</label>
+                                    <input type="text" placeholder="Ihre Firma">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Vorname</label>
+                                    <input type="text" placeholder="Ihr Vorname">
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Nachname</label>
+                                    <input type="text" placeholder="Ihr Nachname">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">PLZ, Ort</label>
+                                    <input type="text" placeholder="PLZ, Ort">
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Funktion</label>
+                                    <input type="text" placeholder="Ihre Funktion">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">E-Mail</label>
+                                <input type="email" placeholder="Ihre E-Mail Adresse">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Telefon</label>
+                                <input type="tel" placeholder="Ihre Telefonnummer">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Ihr Anliegen</label>
+                                <select>
+                                    <option>Baureinigung Angebot</option>
+                                    <option>Baustellenwartung</option>
+                                    <option>Bauendreinigung</option>
+                                    <option>Sonstige Anfrage</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Ihre Mitteilung</label>
+                                <textarea rows="4" placeholder="Ihre Nachricht an uns"></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2">
+                                    <span class="text-sm">Ich habe die Datenschutzbestimmungen gelesen und akzeptiere diese.</span>
+                                </label>
+                            </div>
+                            <button type="button" class="w-full">Anfrage absenden</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Kontaktdaten</h3>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Adresse</h4>
+                                <address class="not-italic">
+                                    RIVOG AG<br>
+                                    Lagerstrasse 4<br>
+                                    9200 Gossau SG<br>
+                                    Schweiz
+                                </address>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Telefon</h4>
+                                <p>+41 71 511 13 03</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">E-Mail</h4>
+                                <p>info@rivog.ch</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Öffnungszeiten</h4>
+                                <p>Montag - Freitag: 07:00 - 18:00 Uhr</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md relative" style="min-height: 300px;">
+                        <h3 class="text-2xl font-bold mb-6">Standort</h3>
+                        <div class="absolute inset-0 pt-16 px-8 pb-8">
+                            <!-- Google Maps iframe would be here in a real implementation -->
+                            <div class="bg-gray-200 w-full h-full flex items-center justify-center rounded-lg">
+                                <div class="text-center p-4">
+                                    <i class="fas fa-map-marked-alt text-6xl text-gray-400 mb-4"></i>
+                                    <p>RIVOG AG<br>Lagerstrasse 4<br>9200 Gossau SG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 pt-12 pb-8">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="flex items-center mb-6">
+                        <img src="https://rivog.ch/wp-content/uploads/2020/06/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                        <h3 class="text-2xl font-bold">RIVOG AG</h3>
+                    </div>
+                    <p class="mb-6">Professionelle Facility Services mit Schweizer Qualität und Präzision. Unser umfangreiches Leistungsspektrum erlaubt Lösungen aus einer Hand.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Dienstleistungen</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Unterhaltsreinigung</a></li>
+                        <li><a href="#" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baureinigung</a></li>
+                        <li><a href="#" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baustellenbewachung</a></li>
+                        <li><a href="#" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Spezialreinigung</a></li>
+                        <li><a href="#" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Umzug & Räumung</a></li>
+                        <li><a href="#" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Kontakt</h4>
+                    <ul class="space-y-4">
+                        <li class="flex">
+                            <i class="fas fa-map-marker-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>RIVOG AG<br>Lagerstrasse 4<br>9200 Gossau SG</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-phone-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>+41 71 511 13 03</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-envelope text-rivog-orange mr-3 mt-1"></i>
+                            <span>info@rivog.ch</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-wrap justify-between">
+                <div class="w-full md:w-auto mb-4 md:mb-0">
+                    <p>&copy; 2025 RIVOG AG. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <ul class="flex flex-wrap space-x-4">
+                        <li><a href="#" class="hover:text-rivog-orange">Impressum</a></li>
+                        <li><a href="#" class="hover:text-rivog-orange">Datenschutz</a></li>
+                        <li><a href="#" class="hover:text-rivog-orange">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-rivog-orange text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Structured Data - Baureinigung FAQs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie oft sollte eine Baustelle gereinigt werden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Je nach Größe und Art der Baustelle empfehlen wir eine tägliche bis wöchentliche Reinigung. Bei intensiven Bauarbeiten kann auch eine tägliche Reinigung sinnvoll sein, während bei weniger intensiven Phasen eine Reinigung ein- bis zweimal pro Woche ausreicht. Wir beraten Sie gerne individuell zu Ihrem spezifischen Bedarf."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet eine professionelle Baureinigung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Kosten für eine professionelle Baureinigung hängen von verschiedenen Faktoren ab, wie der Größe der Baustelle, dem Verschmutzungsgrad, der Häufigkeit der Reinigung und dem Umfang der benötigten Leistungen. Kontaktieren Sie uns für ein individuelles und unverbindliches Angebot, das auf Ihre spezifischen Anforderungen zugeschnitten ist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Übernehmen Sie auch die Entsorgung von Baumaterialien?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, wir bieten ein komplettes Abfallmanagement für Baustellen an, inklusive fachgerechter Entsorgung von Baumaterialien. Dazu gehört das Aufstellen, Leeren und Entsorgen von Abfallinseln sowie die umweltgerechte Entsorgung verschiedener Abfallarten gemäß den geltenden Vorschriften."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Arbeiten Sie auch an Wochenenden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, unsere Reinigungsteams sind flexibel einsetzbar, auch an Wochenenden oder außerhalb regulärer Arbeitszeiten. Wir passen uns Ihrem Bauablauf an, um Störungen zu minimieren und einen reibungslosen Prozess zu gewährleisten. Sprechen Sie mit uns über Ihre zeitlichen Anforderungen."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script>
+        // Check if the page is in editor mode
+        const urlParams = new URLSearchParams(window.location.search);
+        const isEditorMode = urlParams.get('editor') === 'true';
+
+        if (isEditorMode) {
+            // Enable TinyMCE for editable elements
+            tinymce.init({
+                selector: '[data-editable]',
+                inline: true,
+                menubar: false,
+                plugins: 'lists link',
+                toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright | bullist numlist | link',
+                contextmenu: false,
+                valid_elements: 'p,h1,h2,h3,h4,h5,h6,a[href],strong,em,ul,ol,li,br',
+                setup: editor => {
+                    editor.on('focus', () => editor.getElement().classList.add('tinymce-active'));
+                    editor.on('blur', () => editor.getElement().classList.remove('tinymce-active'));
+                }
+            });
+
+            // Add overlay for images
+            document.querySelectorAll('img').forEach(img => {
+                const overlay = document.createElement('div');
+                overlay.className = 'image-overlay';
+                overlay.innerHTML = '<button class="edit-button">Edit</button>';
+                img.parentNode.insertBefore(overlay, img.nextSibling);
+            });
+
+            // Add save button
+            const saveButton = document.createElement('button');
+            saveButton.id = 'save-button';
+            saveButton.textContent = 'Speichern';
+            saveButton.onclick = async () => {
+                const changes = [];
+                document.querySelectorAll('[data-editable]').forEach(el => {
+                    const editor = tinymce.get(el.id);
+                    if (editor) {
+                        changes.push({
+                            elementId: el.id,
+                            content: editor.getContent()
+                        });
+                    }
+                });
+
+                try {
+                    const response = await fetch('editor/save_content.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            page: window.location.pathname.split('/').pop(),
+                            changes: changes
+                        })
+                    });
+                    const data = await response.json();
+                    if (data.success) {
+                        alert('Änderungen gespeichert!');
+                        window.location.href = window.location.pathname; // Reload live version
+                    } else {
+                        alert('Fehler beim Speichern: ' + data.message);
+                    }
+                } catch (error) {
+                    alert('Fehler beim Speichern: ' + error.message);
+                }
+            };
+            document.body.appendChild(saveButton);
+        }
+    </script>
+
+    <nav>
+        <!-- Existing menu items -->
+        <ul>
+            <li><a href="Impressum.html">Impressum</a></li>
+            <li><a href="Datenschutz.html">Datenschutz</a></li>
+            <li><a href="#" id="admin-link" onclick="openLoginModal()">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div id="login-modal" class="hidden">
+        <form id="login-form">
+            <label for="page-select">Seite wählen:</label>
+            <select id="page-select">
+                <option value="Baureinigung.html">Baureinigung</option>
+                <option value="Consulting.html">Consulting</option>
+                <option value="Security.html">Security</option>
+            </select>
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function openLoginModal() {
+            document.getElementById('login-modal').classList.remove('hidden');
+        }
+
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedPage = document.getElementById('page-select').value;
+            const password = document.getElementById('password').value;
+
+            // Simulate login validation
+            if (password === 'admin') {
+                window.location.href = `${selectedPage}?editor=true`;
+            } else {
+                alert('Falsches Passwort!');
+            }
+        });
+    </script>
+</body>
+</html>

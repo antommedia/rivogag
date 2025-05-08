@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Services | RIVOG AG | Professionelle Baustellenüberwachung und Sicherheitsdienst in Gossau</title>
+    <meta name="description" content="RIVOG AG bietet professionelle Baustellenbewachung und Sicherheitsdienstleistungen in Gossau und der gesamten Schweiz. Schützen Sie Ihre Baustelle vor unbefugtem Zutritt und Diebstahl.">
+    <meta name="keywords" content="Baustellenbewachung, Security Service, Baustellensicherheit, Sicherheitsdienst Gossau, Baustellenschutz Schweiz, Schliessdienst, Überwachung, Diebstahlschutz, Brandschutz">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/rivog-flag.bw_.png" type="image/png">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(to right, #1a1a1a 50%, #ff6600 50%);
+            min-height: 600px;
+        }
+        .service-box {
+            transition: transform 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+        .bg-rivog-orange {
+            background-color: #ff6600;
+        }
+        .text-rivog-orange {
+            color: #ff6600;
+        }
+        .border-rivog-orange {
+            border-color: #ff6600;
+        }
+        .quality-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+        .feature-card {
+            border-left: 4px solid #ff6600;
+        }
+         /* Mobile Nav Popup von unten */
+         #mobile-nav {
+            position: fixed !important;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: auto;
+            z-index: 9999;
+            background: #fff;
+            box-shadow: 0 -8px 32px rgba(0,0,0,0.15);
+            display: none;
+            animation: slideUpMobileNav 0.35s cubic-bezier(0.4,0,0.2,1);
+        }
+        @keyframes slideUpMobileNav {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        #mobile-nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
+            gap: 2rem;
+        }
+        #mobile-nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+        #mobile-nav ul li a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            display: block;
+            padding: 1rem 0;
+            transition: color 0.2s;
+        }
+        #mobile-nav ul li a:hover {
+            color: #ff6600;
+        }
+    </style>
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RIVOG AG",
+      "image": "assets/img/rivog-flag.bw_.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lagerstrasse 4",
+        "addressLocality": "Gossau",
+        "postalCode": "9200",
+        "addressRegion": "SG",
+        "addressCountry": "CH"
+      },
+      "telephone": "+41 71 511 13 03",
+      "email": "info@rivog.ch",
+      "url": "https://www.rivog.ch",
+      "description": "Professionelle Baustellenbewachung und Sicherheitsdienstleistungen für Baustellen in der Schweiz. Schutz vor unbefugtem Zutritt und Diebstahl.",
+      "openingHours": "Mo-Fr 07:00-18:00",
+      "priceRange": "$$",
+      "areaServed": ["Gossau", "St. Gallen", "Zürich", "Schweiz"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Security Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Baustellenbewachung"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Schliessdienst"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Objektkontrolle"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diebstahlschutz"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Brandschutz"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Baustellenbewachung",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "RIVOG AG",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lagerstrasse 4",
+          "addressLocality": "Gossau",
+          "postalCode": "9200",
+          "addressRegion": "SG",
+          "addressCountry": "CH"
+        }
+      },
+      "areaServed": ["Gossau", "St. Gallen", "Zürich", "Schweiz"],
+      "description": "Professionelle Baustellenbewachung und Sicherheitsdienstleistungen. Wir öffnen und schliessen Ihre Baustelle, kontrollieren Fenster und schützen vor Diebstahl und Brandgefahren.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CHF",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <div class="flex items-center">
+                <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold">RIVOG AG</h1>
+                    <p class="text-sm text-gray-600">Security Services</p>
+                </div>
+            </div>
+            <nav class="hidden xl:block">
+                <ul class="flex space-x-6">
+                    <li><a href="/" class="hover:text-rivog-orange">Home</a></li>
+                    <li><a href="/#services" class="hover:text-rivog-orange">Dienstleistungen</a></li>
+                    <li><a href="/#about" class="hover:text-rivog-orange">Über uns</a></li>
+                    <li><a href="/#quality" class="hover:text-rivog-orange">Qualität</a></li>
+                    <li><a href="/#contact" class="hover:text-rivog-orange">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="xl:hidden">
+                <button type="button" class="text-gray-600 hover:text-rivog-orange">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 py-8 flex items-center">
+                    <div class="text-white p-6 max-w-lg">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Professionelle Baustellenbewachung</h1>
+                        <p class="text-lg mb-8">Haben Sie den Schutz und die Sicherheit Ihrer Baustelle im Blick? Bei RIVOG AG sind Sie genau richtig! Wir sorgen für höchste Sicherheitsstandards auf Ihrer Baustelle.</p>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <a href="#contact" class="bg-rivog-orange text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-opacity-90">Sicherheit anfragen</a>
+                            <a href="#services" class="border border-white text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-white hover:text-gray-900">Unsere Security-Leistungen</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 py-8 flex items-center justify-center">
+                    <img src="assets/img/happy-rivog-customer.png" alt="RIVOG AG Security Service" class="max-w-full h-auto rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Services Overview -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Baustellenbewachung & Security</h2>
+                <p class="text-xl text-gray-600">Professioneller Schutz für Ihre Baustelle</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="mb-16">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-wrap items-center">
+                        <div class="w-full lg:w-2/3 mb-8 lg:mb-0">
+                            <h3 class="text-2xl font-bold mb-4">Umfassender Schutz für Ihre Baustelle</h3>
+                            <p class="mb-6 text-lg">Wir öffnen Ihre Baustelle jeden Morgen mit Sorgfalt und schliessen sie abends sicher ab. Doch wir tun noch mehr als das: Wir kontrollieren alle Fenster, um sicherzustellen, dass kein unbefugter Zutritt möglich ist und keine unnötigen Risiken eingegangen werden.</p>
+                            
+                            <p class="mb-6">In der Bauindustrie können Diebstahl und Brandgefahren erhebliche Verzögerungen und Kosten verursachen. Unsere Dienstleistungen helfen, diese Risiken zu minimieren. Durch unsere sorgfältige Überwachung und Kontrolle bieten wir Ihnen das höchste Mass an Sicherheit und Schutz, sodass Sie beruhigt sein können, dass Ihre Baustelle auch ausserhalb der Arbeitszeiten gut geschützt ist.</p>
+                            
+                            <p>Wir kümmern uns um die kleinen Details, die einen grossen Unterschied machen können. Unser oberstes Ziel ist es, Ihre Baustelle sicher und effizient zu machen, und wir setzen uns dafür ein, dies jeden Tag aufs Neue zu erreichen.</p>
+                        </div>
+                        <div class="w-full lg:w-1/3 flex justify-center">
+                            <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                                <i class="fas fa-shield-alt text-rivog-orange text-5xl mb-4"></i>
+                                <h4 class="text-xl font-bold mb-2">Vertrauen Sie uns</h4>
+                                <p>Wir halten die Wache, während Sie sich auf das konzentrieren können, was Sie am besten können: Bauen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Services Details -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md pl-8">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-rivog-orange text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-door-open text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Öffnen und Schliessen</h3>
+                    </div>
+                    <p>Wir öffnen Ihre Baustelle pünktlich am Morgen und schliessen sie sicher am Abend ab. Dabei achten wir auf alle Details, um Ihre Baustelle vor unbefugtem Zutritt zu schützen.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md pl-8">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-rivog-orange text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-search text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Kontrolle aller Fenster</h3>
+                    </div>
+                    <p>Bei unserer täglichen Rundkontrolle überprüfen wir alle Fenster und Zugänge, um sicherzustellen, dass keine Einstiegsmöglichkeiten für Unbefugte bestehen und alle Sicherheitsvorkehrungen getroffen sind.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md pl-8">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-rivog-orange text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Minimierung von Diebstahlrisiken</h3>
+                    </div>
+                    <p>Durch unsere präventive Überwachung und regelmässige Kontrollen reduzieren wir das Risiko von Diebstählen auf Ihrer Baustelle erheblich, was teure Verzögerungen und Materialverluste verhindert.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md pl-8">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-rivog-orange text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-fire-extinguisher text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Schutz vor Brandgefahren</h3>
+                    </div>
+                    <p>Wir führen regelmässige Kontrollen auf Ihrer Baustelle durch, um Brandrisiken rechtzeitig zu erkennen und zu minimieren, einschliesslich der Überwachung von elektrischen Anlagen und brennbaren Materialien.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-8 rounded-lg shadow-md mb-12">
+                <h3 class="text-2xl font-bold mb-6">Weitere Security-Dienstleistungen</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <li class="bg-white p-4 rounded-md shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-rivog-orange mr-3"></i>
+                        <span>Nächtliche Kontrollgänge</span>
+                    </li>
+                    <li class="bg-white p-4 rounded-md shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-rivog-orange mr-3"></i>
+                        <span>Dokumentation der Kontrollgänge</span>
+                    </li>
+                    <li class="bg-white p-4 rounded-md shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-rivog-orange mr-3"></i>
+                        <span>Überprüfung der Baucontainer</span>
+                    </li>
+                    <li class="bg-white p-4 rounded-md shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-rivog-orange mr-3"></i>
+                        <span>Kontrolle der Baustellenzäune</span>
+                    </li>
+                    <li class="bg-white p-4 rounded-md shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-rivog-orange mr-3"></i>
+                        <span>Sicherung wertvoller Materialien</span>
+                    </li>
+                    <li class="bg-white p-4 rounded-md shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-rivog-orange mr-3"></i>
+                        <span>Sofortige Alarmierung bei Vorfällen</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Warum RIVOG AG Security wählen?</h2>
+                <p class="text-xl text-gray-600">Wir bieten Sicherheit, auf die Sie sich verlassen können</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="quality-icon bg-rivog-orange text-white mb-6">
+                        <i class="fas fa-user-shield text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Geschultes Sicherheitspersonal</h3>
+                    <p>Unser Sicherheitspersonal ist speziell geschult und verfügt über umfangreiche Erfahrung im Bereich der Baustellensicherheit.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="quality-icon bg-rivog-orange text-white mb-6">
+                        <i class="fas fa-clock text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Zuverlässige Präsenz</h3>
+                    <p>Unsere Mitarbeiter sind pünktlich und zuverlässig. Sie können sich darauf verlassen, dass Ihre Baustelle zu den vereinbarten Zeiten sicher ist.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="quality-icon bg-rivog-orange text-white mb-6">
+                        <i class="fas fa-clipboard-check text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Detaillierte Dokumentation</h3>
+                    <p>Wir dokumentieren alle Kontrollgänge und Vorfälle sorgfältig und stellen Ihnen regelmässige Berichte zur Verfügung.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white p-8 rounded-lg shadow-md">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full lg:w-1/3 mb-8 lg:mb-0 flex justify-center">
+                        <img src="assets/img/RIQ-logo-1024x856.png" alt="RIVOG Qualitätsgarantie" class="max-w-full h-auto">
+                    </div>
+                    <div class="w-full lg:w-2/3 lg:pl-12">
+                        <h3 class="text-2xl font-bold mb-4">Unsere Qualitätsgarantie</h3>
+                        <p class="mb-6">Bei RIVOG AG steht die Qualität unserer Dienstleistungen an erster Stelle. Unsere Baustellenbewachung folgt dem bewährten RIQ-Qualitätsprozess:</p>
+                        <ol class="space-y-4">
+                            <li class="flex">
+                                <div class="bg-rivog-orange text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                                <div>
+                                    <strong class="block mb-1">Bedarfsanalyse:</strong>
+                                    <p>Wir analysieren die spezifischen Sicherheitsbedürfnisse Ihrer Baustelle und identifizieren potenzielle Risiken.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="bg-rivog-orange text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                                <div>
+                                    <strong class="block mb-1">Sicherheitskonzept:</strong>
+                                    <p>Wir entwickeln ein massgeschneidertes Sicherheitskonzept für Ihre Baustelle unter Berücksichtigung aller relevanten Faktoren.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="bg-rivog-orange text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                                <div>
+                                    <strong class="block mb-1">Implementation:</strong>
+                                    <p>Wir setzen das Sicherheitskonzept mit unserem geschulten Personal und zuverlässigen Prozessen um.</p>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="bg-rivog-orange text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                                <div>
+                                    <strong class="block mb-1">Kontinuierliche Überwachung:</strong>
+                                    <p>Wir überwachen und dokumentieren alle Sicherheitsaspekte und passen unser Vorgehen bei Bedarf an.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Das sagen unsere Kunden</h2>
+                <p class="text-xl text-gray-600">Erfahrungen mit unserer Baustellenbewachung</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-rivog-orange">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"Seit wir die Baustellenbewachung von RIVOG AG nutzen, hatten wir keinen einzigen Diebstahl mehr. Das Team ist äusserst zuverlässig und professionell. Absolute Empfehlung für jede Baustelle!"</p>
+                    <div class="flex items-center">
+                        <div class="mr-4">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-gray-600"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Thomas M.</h4>
+                            <p class="text-sm text-gray-600">Bauunternehmer aus St. Gallen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-rivog-orange">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"Die Security-Mitarbeiter von RIVOG AG sind sehr aufmerksam und gründlich. Sie haben bei einer nächtlichen Kontrolle einen Wasserrohrbruch entdeckt und sofort reagiert. So wurden grössere Schäden verhindert. Top Service!"</p>
+                    <div class="flex items-center">
+                        <div class="mr-4">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-gray-600"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sandra K.</h4>
+                            <p class="text-sm text-gray-600">Projektleiterin, Gossau</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-rivog-orange">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"Die Baustellenbewachung von RIVOG AG gibt uns ein sicheres Gefühl. Die detaillierten Berichte und die professionelle Kommunikation haben uns überzeugt. Wir arbeiten seit Jahren zusammen und sind sehr zufrieden."</p>
+                    <div class="flex items-center">
+                        <div class="mr-4">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-gray-600"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Michael W.</h4>
+                            <p class="text-sm text-gray-600">Architekt aus Zürich</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-rivog-orange py-16">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">Sichern Sie Ihre Baustelle jetzt!</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">Vertrauen Sie auf die Erfahrung und Zuverlässigkeit von RIVOG AG. Kontaktieren Sie uns noch heute für ein unverbindliches Angebot zur Baustellenbewachung.</p>
+            <a href="#contact" class="bg-white text-rivog-orange py-3 px-8 rounded-md font-semibold inline-block hover:bg-opacity-90">Kostenlose Beratung anfordern</a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Häufig gestellte Fragen</h2>
+                <p class="text-xl text-gray-600">Antworten auf Ihre Fragen zur Baustellenbewachung</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Wie oft werden Kontrollgänge durchgeführt?</h3>
+                    <p>Die Häufigkeit der Kontrollgänge richtet sich nach Ihren individuellen Bedürfnissen und den spezifischen Risiken Ihrer Baustelle. In der Standardausführung bieten wir täglich mindestens einen Kontrollgang am Morgen und einen am Abend an. Bei erhöhtem Sicherheitsbedarf können auch mehrere Kontrollgänge pro Nacht vereinbart werden.</p>
+                </div>
+                <div class="mb-6 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Werden die Kontrollgänge dokumentiert?</h3>
+                    <p>Ja, alle Kontrollgänge werden detailliert dokumentiert. Sie erhalten regelmässige Berichte über den Zustand Ihrer Baustelle, durchgeführte Kontrollen und eventuelle Vorfälle. Diese Dokumentation kann auch für Versicherungszwecke oder zur Qualitätssicherung verwendet werden.</p>
+                </div>
+                <div class="mb-6 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Was passiert im Notfall?</h3>
+                    <p>Im Falle eines Notfalls (wie Einbruch, Feuer oder Wasserschaden) werden sofort die zuständigen Behörden alarmiert und gleichzeitig Ihre festgelegten Ansprechpartner informiert. Unser Personal ist für Notfallsituationen geschult und bleibt vor Ort, bis die Situation unter Kontrolle ist.</p>
+                </div>
+                <div class="mb-6 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Können Sie auch eine 24-Stunden-Bewachung anbieten?</h3>
+                    <p>Ja, bei besonders schutzbedürftigen Baustellen bieten wir auch eine 24-Stunden-Bewachung an. Kontaktieren Sie uns für ein individuelles Angebot, das auf Ihre spezifischen Sicherheitsanforderungen zugeschnitten ist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Kontakt</h2>
+                <p class="text-xl text-gray-600">Nehmen Sie Kontakt mit uns auf für ein unverbindliches Angebot</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6">Kontaktformular</h3>
+                        <form class="contact-form" id="rivog-contact-form">
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Anrede</label>
+                                    <select name="anrede">
+                                        <option>Frau</option>
+                                        <option>Herr</option>
+                                    </select>
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Firma</label>
+                                    <input type="text" name="firma" placeholder="Ihre Firma">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Vorname</label>
+                                    <input type="text" name="vorname" placeholder="Ihr Vorname">
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Nachname</label>
+                                    <input type="text" name="nachname" placeholder="Ihr Nachname">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">PLZ, Ort</label>
+                                    <input type="text" name="plz_ort" placeholder="PLZ, Ort">
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Funktion</label>
+                                    <input type="text" name="funktion" placeholder="Ihre Funktion">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">E-Mail</label>
+                                <input type="email" name="email" placeholder="Ihre E-Mail Adresse" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Telefon</label>
+                                <input type="tel" name="telefon" placeholder="Ihre Telefonnummer">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Ihr Anliegen</label>
+                                <select name="anliegen">
+                                    <option>Baustellenbewachung</option>
+                                    <option>Beratung</option>
+                                    <option>Sonstiges</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Ihre Mitteilung</label>
+                                <textarea rows="4" name="mitteilung" placeholder="Beschreiben Sie bitte Ihr Sicherheitsbedürfnis"></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label class="flex items-center">
+                                    <input type="checkbox" name="datenschutz" class="mr-2" value="1" required>
+                                    <span class="text-sm">Ich habe die Datenschutzbestimmungen gelesen und akzeptiere diese.</span>
+                                </label>
+                            </div>
+                            <button type="submit" id="contact-submit-btn" class="w-full">Anfrage absenden</button>
+                        </form>
+                        <div id="contact-success-msg" style="display:none;"></div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Kontaktdaten</h3>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Adresse</h4>
+                                <address class="not-italic">
+                                    RIVOG AG<br>
+                                    Lagerstrasse 4<br>
+                                    9200 Gossau SG<br>
+                                    Schweiz
+                                </address>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Telefon</h4>
+                                <p>+41 71 511 13 03</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">E-Mail</h4>
+                                <p>info@rivog.ch</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Öffnungszeiten</h4>
+                                <p>Montag - Freitag: 07:00 - 18:00 Uhr</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-6">Schnelle Antwort gewünscht?</h3>
+                        <p class="mb-4">Für dringende Anfragen zur Baustellenbewachung oder Security-Dienstleistungen können Sie uns direkt anrufen:</p>
+                        <div class="bg-rivog-orange text-white p-4 rounded-lg text-center mb-4">
+                            <i class="fas fa-phone-alt mr-2"></i> +41 71 511 13 03
+                        </div>
+                        <p>Unser Security-Team steht Ihnen für Notfälle rund um die Uhr zur Verfügung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 pt-12 pb-8">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="flex items-center mb-6">
+                        <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                        <h3 class="text-2xl font-bold">RIVOG AG</h3>
+                    </div>
+                    <p class="mb-6">Professionelle Facility Services mit Schweizer Qualität und Präzision. Unser umfangreiches Leistungsspektrum erlaubt Lösungen aus einer Hand.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=41797325493&text=Vielen%20Dank%20f%C3%BCr%20Ihr%20Interesse%20an%20der%20RIVOG.%20Stellen%20Sie%20Ihre%20Frage" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Dienstleistungen</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Unterhaltsreinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baureinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baustellenbewachung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Spezialreinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Umzug & Räumung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Kontakt</h4>
+                    <ul class="space-y-4">
+                        <li class="flex">
+                            <i class="fas fa-map-marker-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>RIVOG AG<br>Lagerstrasse 4<br>9200 Gossau SG</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-phone-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>+41 71 511 13 03</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-envelope text-rivog-orange mr-3 mt-1"></i>
+                            <span>info@rivog.ch</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-wrap justify-between">
+                <div class="w-full md:w-auto mb-4 md:mb-0">
+                    <p>&copy; 2025 RIVOG AG. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <ul class="flex flex-wrap space-x-4">
+                        <li><a href="Impressum.html" class="hover:text-rivog-orange">Impressum</a></li>
+                        <li><a href="Datenschutz.html" class="hover:text-rivog-orange">Datenschutz</a></li>
+                        <li><a href="admin.html" class="hover:text-rivog-orange">Admin Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-rivog-orange text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Structured Data - FAQs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wie oft werden Kontrollgänge durchgeführt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Häufigkeit der Kontrollgänge richtet sich nach Ihren individuellen Bedürfnissen und den spezifischen Risiken Ihrer Baustelle. In der Standardausführung bieten wir täglich mindestens einen Kontrollgang am Morgen und einen am Abend an. Bei erhöhtem Sicherheitsbedarf können auch mehrere Kontrollgänge pro Nacht vereinbart werden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Werden die Kontrollgänge dokumentiert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, alle Kontrollgänge werden detailliert dokumentiert. Sie erhalten regelmässige Berichte über den Zustand Ihrer Baustelle, durchgeführte Kontrollen und eventuelle Vorfälle. Diese Dokumentation kann auch für Versicherungszwecke oder zur Qualitätssicherung verwendet werden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was passiert im Notfall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Im Falle eines Notfalls (wie Einbruch, Feuer oder Wasserschaden) werden sofort die zuständigen Behörden alarmiert und gleichzeitig Ihre festgelegten Ansprechpartner informiert. Unser Personal ist für Notfallsituationen geschult und bleibt vor Ort, bis die Situation unter Kontrolle ist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Können Sie auch eine 24-Stunden-Bewachung anbieten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, bei besonders schutzbedürftigen Baustellen bieten wir auch eine 24-Stunden-Bewachung an. Kontaktieren Sie uns für ein individuelles Angebot, das auf Ihre spezifischen Sicherheitsanforderungen zugeschnitten ist."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script>
+    // Kontaktformular AJAX-Versand
+    const form = document.getElementById('rivog-contact-form');
+    const btn = document.getElementById('contact-submit-btn');
+    const msg = document.getElementById('contact-success-msg');
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.textContent = 'Sende...';
+            btn.style.backgroundColor = '#e65c00';
+            const formData = new FormData(form);
+            fetch('assets/contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(r => r.json())
+            .then(data => {
+                if(data.success) {
+                    btn.textContent = 'Vielen Dank. Wir melden uns zeitnahe bei Ihnen.';
+                    btn.style.backgroundColor = '#22c55e';
+                    msg.style.display = 'block';
+                    msg.textContent = '';
+                    setTimeout(() => {
+                        btn.textContent = 'Anfrage absenden';
+                        btn.style.backgroundColor = '#ff6600';
+                        btn.disabled = false;
+                    }, 10000);
+                } else {
+                    btn.textContent = 'Anfrage absenden';
+                    btn.style.backgroundColor = '#ff6600';
+                    btn.disabled = false;
+                    msg.style.display = 'block';
+                    msg.textContent = data.message || 'Fehler beim Versand.';
+                    msg.style.color = '#dc2626';
+                    setTimeout(() => { msg.style.display = 'none'; }, 10000);
+                }
+            })
+            .catch(() => {
+                btn.textContent = 'Anfrage absenden';
+                btn.style.backgroundColor = '#ff6600';
+                btn.disabled = false;
+                msg.style.display = 'block';
+                msg.textContent = 'Fehler beim Versand.';
+                msg.style.color = '#dc2626';
+                setTimeout(() => { msg.style.display = 'none'; }, 10000);
+            });
+        });
+    }
+    </script>
+    <script>
+    // Hamburger-Menü für Mobilgeräte
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuBtn = document.querySelector('header .xl\\:hidden button');
+      const nav = document.querySelector('header nav');
+      if (!menuBtn || !nav) return;
+      let mobileNav = document.getElementById('mobile-nav');
+      if (!mobileNav) {
+        mobileNav = nav.cloneNode(true);
+        mobileNav.id = 'mobile-nav';
+        mobileNav.classList.remove('hidden', 'xl:block');
+        mobileNav.classList.add('block', 'xl:hidden', 'bg-white', 'shadow-md', 'absolute', 'top-full', 'right-0', 'left-0', 'z-40');
+        mobileNav.style.display = 'none';
+        nav.parentNode.appendChild(mobileNav);
+      }
+      menuBtn.addEventListener('click', function() {
+        if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+          mobileNav.style.display = 'block';
+        } else {
+          mobileNav.style.display = 'none';
+        }
+      });
+      mobileNav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+          mobileNav.style.display = 'none';
+        }
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) {
+          mobileNav.style.display = 'none';
+        }
+      });
+    });
+    </script>
+     <script>
+        // Hamburger-Menü für Mobilgeräte (Popup von unten, zentriert)
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuBtn = document.querySelector('header .xl\\:hidden button');
+          const nav = document.querySelector('header nav');
+          if (!menuBtn || !nav) return;
+          let mobileNav = document.getElementById('mobile-nav');
+          if (!mobileNav) {
+            mobileNav = nav.cloneNode(true);
+            mobileNav.id = 'mobile-nav';
+            mobileNav.classList.remove('hidden', 'xl:block');
+            // Remove all Tailwind classes, add our own
+            mobileNav.className = '';
+            mobileNav.style.display = 'none';
+            // Zentrierung und Layout wird über CSS geregelt
+            nav.parentNode.appendChild(mobileNav);
+          }
+          menuBtn.addEventListener('click', function() {
+            if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+              mobileNav.style.display = 'block';
+            } else {
+              mobileNav.style.display = 'none';
+            }
+          });
+          // Menü schließt sich beim Klick auf einen Link
+          mobileNav.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+              mobileNav.style.display = 'none';
+            }
+          });
+          // Bei Resize: Menü ausblenden, wenn wieder groß
+          window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) {
+              mobileNav.style.display = 'none';
+            }
+          });
+        });
+        </script>
+    <script>
+    // Check if the page is in editor mode
+    const urlParams = new URLSearchParams(window.location.search);
+    const isEditorMode = urlParams.get('editor') === 'true';
+
+    if (isEditorMode) {
+        // Hide the Admin button and show the Save button
+        document.getElementById('admin-link').classList.add('hidden');
+        document.getElementById('save-button').classList.remove('hidden');
+
+        // Enable TinyMCE for editable elements
+        tinymce.init({
+            selector: '[data-editable]',
+            inline: true,
+            menubar: false,
+            plugins: 'lists link',
+            toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright | bullist numlist | link',
+            contextmenu: false,
+            valid_elements: 'p,h1,h2,h3,h4,h5,h6,a[href],strong,em,ul,ol,li,br',
+            setup: editor => {
+                editor.on('focus', () => editor.getElement().classList.add('tinymce-active'));
+                editor.on('blur', () => editor.getElement().classList.remove('tinymce-active'));
+            }
+        });
+    }
+    </script>
+</body>
+</html>

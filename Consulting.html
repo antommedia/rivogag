@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting | RIVOG AG | Professionelle Facility Management Beratung in Gossau, St. Gallen</title>
+    <meta name="description" content="RIVOG AG bietet professionelle Facility Management Beratung mit individuellen Lösungen für optimierte Betriebsabläufe. Unsere Experten analysieren Ihre Anforderungen und entwickeln maßgeschneiderte Konzepte für effizientere Facility Services.">
+    <meta name="keywords" content="Facility Management Beratung, FM Consulting, Betriebskostenoptimierung, Facility Management Gossau, RIVOG Consulting, Facility Services Beratung, Bedarfsanalyse, Qualitätsmanagement">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/rivog-flag.bw_.png" type="image/png">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(to right, #1a1a1a 50%, #ff6600 50%);
+            min-height: 600px;
+        }
+        .service-box {
+            transition: transform 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+        .bg-rivog-orange {
+            background-color: #ff6600;
+        }
+        .text-rivog-orange {
+            color: #ff6600;
+        }
+        .border-rivog-orange {
+            border-color: #ff6600;
+        }
+        .quality-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+        .process-step {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 30px;
+        }
+        .process-step:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background-color: #ff6600;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .process-step.step-1:before {
+            content: '1';
+        }
+        .process-step.step-2:before {
+            content: '2';
+        }
+        .process-step.step-3:before {
+            content: '3';
+        }
+        .process-step.step-4:before {
+            content: '4';
+        }
+        .consulting-benefit {
+            border-left: 3px solid #ff6600;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+         /* Mobile Nav Popup von unten */
+         #mobile-nav {
+            position: fixed !important;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: auto;
+            z-index: 9999;
+            background: #fff;
+            box-shadow: 0 -8px 32px rgba(0,0,0,0.15);
+            display: none;
+            animation: slideUpMobileNav 0.35s cubic-bezier(0.4,0,0.2,1);
+        }
+        @keyframes slideUpMobileNav {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        #mobile-nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 40vh;
+            gap: 2rem;
+        }
+        #mobile-nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+        #mobile-nav ul li a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            display: block;
+            padding: 1rem 0;
+            transition: color 0.2s;
+        }
+        #mobile-nav ul li a:hover {
+            color: #ff6600;
+        }
+    </style>
+    
+    <!-- Structured Data for Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Facility Management Consulting",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "RIVOG AG",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lagerstrasse 4",
+          "addressLocality": "Gossau",
+          "postalCode": "9200",
+          "addressRegion": "SG",
+          "addressCountry": "CH"
+        },
+        "telephone": "+41 71 511 13 03",
+        "image": "assets/img/rivog-flag.bw_.png"
+      },
+      "areaServed": ["Gossau", "St. Gallen", "Zürich", "Schweiz"],
+      "description": "Professionelle Facility Management Beratung der RIVOG AG - Maßgeschneiderte Konzepte für optimierte Facility Services und Betriebsabläufe.",
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "priceCurrency": "CHF"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+            <div class="flex items-center">
+                <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                <div>
+                    <h1 class="text-xl font-bold">RIVOG AG</h1>
+                    <p class="text-sm text-gray-600">Facility Services</p>
+                </div>
+            </div>
+            <nav class="hidden xl:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-rivog-orange">Home</a></li>
+                    <li>
+                        <div class="relative group">
+                            <a href="#" class="hover:text-rivog-orange flex items-center">
+                                Dienstleistungen <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                            </a>
+                            <div class="absolute left-0 hidden pt-2 group-hover:block z-50">
+                                <div class="bg-white shadow-lg rounded py-1 w-60">
+                                    <a href="unterhaltsreinigung.html" class="block px-4 py-2 hover:bg-gray-100">Unterhaltsreinigung</a>
+                                    <a href="baureinigung.html" class="block px-4 py-2 hover:bg-gray-100">Baureinigung</a>
+                                    <a href="security.html" class="block px-4 py-2 hover:bg-gray-100">Baustellenbewachung</a>
+                                    <a href="spezialreinigung.html" class="block px-4 py-2 hover:bg-gray-100">Spezialreinigung</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Umzug & Räumung</a>
+                                    <a href="#" class="block px-4 py-2 bg-gray-100 text-rivog-orange">Consulting</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="index.html#about" class="hover:text-rivog-orange">Über uns</a></li>
+                    <li><a href="index.html#quality" class="hover:text-rivog-orange">Qualität</a></li>
+                    <li><a href="index.html#contact" class="hover:text-rivog-orange">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="xl:hidden">
+                <button type="button" class="text-gray-600 hover:text-rivog-orange">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container mx-auto px-4 py-16">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 py-8 flex items-center">
+                    <div class="text-white p-6 max-w-lg">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Facility Management Consulting</h1>
+                        <p class="text-lg mb-8">Professionelle Beratung für optimale Facility Management Lösungen – individuell auf Ihre Bedürfnisse zugeschnitten mit Schweizer Qualität und Präzision.</p>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <a href="#contact" class="bg-rivog-orange text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-opacity-90">Kostenlose Erstberatung</a>
+                            <a href="#consulting-services" class="border border-white text-white py-3 px-6 rounded-md font-semibold text-center hover:bg-white hover:text-gray-900">Unsere Beratungsleistungen</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 py-8 flex items-center justify-center">
+                    <img src="assets/img/RI-quality-1024x491.png" alt="RIVOG Consulting" class="max-w-full h-auto rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-4">Professionelle Facility Management Beratung</h2>
+                    <div class="w-16 h-1 bg-rivog-orange mb-6"></div>
+                    <p class="mb-6 text-lg">Die RIVOG AG bietet umfassende Beratungsleistungen im Bereich Facility Management an. Wir analysieren Ihre aktuellen Prozesse, identifizieren Optimierungspotentiale und entwickeln maßgeschneiderte Lösungen, die perfekt auf Ihre individuellen Bedürfnisse zugeschnitten sind.</p>
+                    <p class="mb-6">Als erfahrener Partner im Facility Management verfügen wir über das notwendige Know-how, um Ihre betrieblichen Abläufe zu verbessern, Kosten zu senken und die Qualität Ihrer Facility Services zu steigern. Dabei setzen wir auf nachhaltige Konzepte, die langfristig Bestand haben und kontinuierlich weiterentwickelt werden können.</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <div class="bg-gray-100 p-4 rounded-lg flex items-center">
+                            <i class="fas fa-chart-line text-rivog-orange text-2xl mr-3"></i>
+                            <span>Effizienzsteigerung</span>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg flex items-center">
+                            <i class="fas fa-money-bill-wave text-rivog-orange text-2xl mr-3"></i>
+                            <span>Kostenoptimierung</span>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg flex items-center">
+                            <i class="fas fa-tasks text-rivog-orange text-2xl mr-3"></i>
+                            <span>Prozessverbesserung</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="bg-gray-100 p-8 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Die Vorteile unseres Consultings auf einen Blick:</h3>
+                        <div class="consulting-benefit">
+                            <h4 class="font-bold mb-2">Maßgeschneiderte Lösungen</h4>
+                            <p>Individuelle Konzepte, die exakt auf Ihre Anforderungen und Unternehmensziele abgestimmt sind.</p>
+                        </div>
+                        <div class="consulting-benefit">
+                            <h4 class="font-bold mb-2">Kostenreduktion</h4>
+                            <p>Identifikation von Einsparungspotentialen und Entwicklung von Strategien zur Senkung der Betriebskosten.</p>
+                        </div>
+                        <div class="consulting-benefit">
+                            <h4 class="font-bold mb-2">Qualitätssteigerung</h4>
+                            <p>Optimierung von Prozessen und Schnittstellen für eine verbesserte Servicequalität.</p>
+                        </div>
+                        <div class="consulting-benefit">
+                            <h4 class="font-bold mb-2">Nachhaltigkeit</h4>
+                            <p>Entwicklung umweltfreundlicher und ressourcenschonender Facility Management-Konzepte.</p>
+                        </div>
+                        <div class="consulting-benefit">
+                            <h4 class="font-bold mb-2">Unabhängige Beratung</h4>
+                            <p>Objektive Bewertung Ihrer aktuellen Situation und neutrale Empfehlungen für Verbesserungen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="consulting-services" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Unsere Beratungsleistungen</h2>
+                <p class="text-xl text-gray-600">Umfassendes Consulting für Ihr Facility Management</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="bg-rivog-orange rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-search text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Bedarfsanalyse</h3>
+                        <p class="mb-4 text-center">Gründliche Analyse Ihrer aktuellen Situation und Identifikation von Verbesserungspotentialen in Ihrem Facility Management.</p>
+                        <ul class="mb-4 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Ist-Analyse Ihrer aktuellen Prozesse</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Identifikation von Schwachstellen</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Potenzialanalyse für Optimierungen</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Benchmark-Vergleiche</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="bg-rivog-orange rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-pencil-ruler text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Konzeptentwicklung</h3>
+                        <p class="mb-4 text-center">Erarbeitung maßgeschneiderter Konzepte für Ihre individuellen Anforderungen im Bereich Facility Management.</p>
+                        <ul class="mb-4 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Strategische Planung</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Entwicklung von Prozessabläufen</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Definition von Leistungsstandards</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Erstellung von Pflichtenhefte</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="bg-rivog-orange rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-coins text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Kostenoptimierung</h3>
+                        <p class="mb-4 text-center">Identifikation von Einsparpotentialen und Entwicklung von Strategien zur nachhaltigen Senkung Ihrer Betriebskosten.</p>
+                        <ul class="mb-4 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Kostenanalyse und -transparenz</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Identifikation von Einsparungspotentialen</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Optimierung von Ressourceneinsatz</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Entwicklung von Kostenmodellen</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="bg-rivog-orange rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-award text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Qualitätsmanagement</h3>
+                        <p class="mb-4 text-center">Entwicklung und Implementierung von Qualitätssicherungssystemen für Ihre Facility Management Prozesse.</p>
+                        <ul class="mb-4 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Definition von Qualitätsstandards</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Erstellung von Kontrollmechanismen</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Entwicklung von KPIs</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Kontinuierliche Verbesserungsprozesse</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="bg-rivog-orange rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-users-cog text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Personalberatung</h3>
+                        <p class="mb-4 text-center">Beratung zur optimalen Personalstruktur und -einsatz im Bereich Facility Management.</p>
+                        <ul class="mb-4 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Analyse des Personalbedarfs</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Optimierung der Personalstruktur</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Entwicklung von Schulungskonzepten</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Optimierung der Arbeitsabläufe</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-box bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="bg-rivog-orange rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-leaf text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Nachhaltigkeitsberatung</h3>
+                        <p class="mb-4 text-center">Beratung zur nachhaltigen Gestaltung Ihrer Facility Management Prozesse unter Berücksichtigung ökologischer Aspekte.</p>
+                        <ul class="mb-4 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Analyse des ökologischen Fußabdrucks</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Entwicklung nachhaltiger Konzepte</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Ressourcenoptimierung</li>
+                            <li class="flex items-center"><i class="fas fa-check text-rivog-orange mr-2"></i> Umweltfreundliche Materialauswahl</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Unser Beratungsprozess</h2>
+                <p class="text-xl text-gray-600">So gehen wir bei unseren Consulting-Projekten vor</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                        <div class="mb-12">
+                            <div class="flex">
+                                <div class="bg-rivog-orange text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Erstgespräch & Analyse</h3>
+                                    <p>Im ersten Schritt führen wir ein ausführliches Gespräch, um Ihre aktuellen Herausforderungen und Ziele zu verstehen. Anschließend analysieren wir Ihre bestehenden Prozesse und identifizieren Optimierungspotentiale.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-12">
+                            <div class="flex">
+                                <div class="bg-rivog-orange text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Konzepterstellung</h3>
+                                    <p>Basierend auf unserer Analyse erarbeiten wir ein maßgeschneidertes Konzept für die Optimierung Ihrer Facility Management Prozesse. Dieses Konzept wird detailliert mit Ihnen besprochen und bei Bedarf angepasst.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-12">
+                            <div class="flex">
+                                <div class="bg-rivog-orange text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Umsetzungsplanung</h3>
+                                    <p>Nach der Freigabe des Konzepts erarbeiten wir einen detaillierten Umsetzungsplan mit konkreten Maßnahmen, Zeitplänen und Verantwortlichkeiten für die erfolgreiche Implementierung.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex">
+                                <div class="bg-rivog-orange text-white rounded-full w-12 h-12 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                                <div>
+                                    <h3 class="text-xl font-bold mb-2">Begleitung & Optimierung</h3>
+                                    <p>Wir begleiten Sie während der Umsetzung und stehen Ihnen beratend zur Seite. Nach der Implementierung evaluieren wir die Ergebnisse und nehmen bei Bedarf weitere Optimierungen vor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex items-center justify-center">
+                        <div class="bg-gray-100 p-8 rounded-lg">
+                            <h4 class="text-xl font-bold mb-4">Ihre Vorteile durch unseren strukturierten Prozess:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                    <span>Klare Zieldefinition und transparente Vorgehensweise</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                    <span>Maßgeschneiderte Lösungen statt Standardkonzepte</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                    <span>Kontinuierliche Abstimmung und Anpassung</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                    <span>Professionelle Begleitung während der gesamten Umsetzung</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-rivog-orange mt-1 mr-3"></i>
+                                    <span>Nachhaltige Ergebnisse durch Erfolgskontrolle und Nachjustierung</span>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="#contact" class="bg-rivog-orange text-white py-3 px-6 rounded-md font-semibold inline-block hover:bg-opacity-90">Jetzt kostenlose Erstberatung vereinbaren</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Erfolgsbeispiele</h2>
+                <p class="text-xl text-gray-600">So haben wir unseren Kunden bereits geholfen</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <span class="bg-rivog-orange bg-opacity-20 text-rivog-orange px-3 py-1 rounded-full text-sm font-semibold">Kostenoptimierung</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Bürokomplex St. Gallen</h3>
+                        <p class="mb-4">Durch die Optimierung der Reinigungsprozesse und die Neustrukturierung der Dienstleistungsverträge konnten wir die jährlichen Facility Management Kosten um 18% senken, bei gleichzeitiger Steigerung der Nutzer- und Mitarbeiterzufriedenheit.</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="block font-bold text-xl text-rivog-orange">18%</span>
+                                <span class="text-sm text-gray-600">Kosteneinsparung</span>
+                            </div>
+                            <div>
+                                <span class="block font-bold text-xl text-rivog-orange">+25%</span>
+                                <span class="text-sm text-gray-600">Nutzerzufriedenheit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <span class="bg-rivog-orange bg-opacity-20 text-rivog-orange px-3 py-1 rounded-full text-sm font-semibold">Prozessoptimierung</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Industriegebäude Zürich</h3>
+                        <p class="mb-4">Durch die Einführung digitaler Prozesse und die Optimierung der Arbeitsabläufe konnten wir die Reaktionszeiten bei Störungsmeldungen um 65% verkürzen und die Effizienz des Facility Managements deutlich steigern.</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="block font-bold text-xl text-rivog-orange">-65%</span>
+                                <span class="text-sm text-gray-600">Reaktionszeit</span>
+                            </div>
+                            <div>
+                                <span class="block font-bold text-xl text-rivog-orange">+40%</span>
+                                <span class="text-sm text-gray-600">Effizienzsteigerung</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <span class="bg-rivog-orange bg-opacity-20 text-rivog-orange px-3 py-1 rounded-full text-sm font-semibold">Nachhaltigkeit</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Einkaufszentrum Gossau</h3>
+                        <p class="mb-4">Durch die Implementierung nachhaltiger Reinigungskonzepte und umweltfreundlicher Materialien konnten wir den Wasserverbrauch um 30% und den Einsatz chemischer Reinigungsmittel um 45% reduzieren.</p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="block font-bold text-xl text-rivog-orange">-30%</span>
+                                <span class="text-sm text-gray-600">Wasserverbrauch</span>
+                            </div>
+                            <div>
+                                <span class="block font-bold text-xl text-rivog-orange">-45%</span>
+                                <span class="text-sm text-gray-600">Chemikalieneinsatz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Häufig gestellte Fragen</h2>
+                <p class="text-xl text-gray-600">Antworten auf Ihre Fragen zu unserem Consulting-Angebot</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <div class="p-4 border-b cursor-pointer flex justify-between items-center">
+                        <h3 class="text-lg font-bold">Für welche Unternehmen ist Ihr Consulting geeignet?</h3>
+                        <i class="fas fa-chevron-down text-rivog-orange"></i>
+                    </div>
+                    <div class="p-4">
+                        <p>Unser Consulting-Angebot richtet sich an Unternehmen jeder Größe, die ihre Facility Management Prozesse optimieren möchten. Ob Bürokomplex, Produktionsstätte, Einkaufszentrum oder öffentliche Einrichtung – wir passen unsere Beratungsleistungen individuell an Ihre spezifischen Anforderungen an.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <div class="p-4 border-b cursor-pointer flex justify-between items-center">
+                        <h3 class="text-lg font-bold">Wie lange dauert ein typisches Consulting-Projekt?</h3>
+                        <i class="fas fa-chevron-down text-rivog-orange"></i>
+                    </div>
+                    <div class="p-4">
+                        <p>Die Dauer eines Consulting-Projekts hängt von verschiedenen Faktoren ab, wie der Größe Ihres Unternehmens, der Komplexität der Prozesse und dem Umfang der gewünschten Optimierung. In der Regel dauert ein Projekt zwischen 2 und 6 Monaten. Wir besprechen den zeitlichen Rahmen detailliert in unserem Erstgespräch.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <div class="p-4 border-b cursor-pointer flex justify-between items-center">
+                        <h3 class="text-lg font-bold">Was kostet eine Beratung durch die RIVOG AG?</h3>
+                        <i class="fas fa-chevron-down text-rivog-orange"></i>
+                    </div>
+                    <div class="p-4">
+                        <p>Die Kosten für unsere Beratungsleistungen sind abhängig vom Umfang des Projekts und den spezifischen Anforderungen. Wir erstellen Ihnen nach einem kostenlosen Erstgespräch ein individuelles Angebot. Unsere Erfahrung zeigt, dass sich die Investition in unsere Beratungsleistungen durch die erreichten Einsparungen und Effizienzsteigerungen in der Regel innerhalb von 12 bis 18 Monaten amortisiert.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <div class="p-4 border-b cursor-pointer flex justify-between items-center">
+                        <h3 class="text-lg font-bold">Wie läuft die Erstberatung ab?</h3>
+                        <i class="fas fa-chevron-down text-rivog-orange"></i>
+                    </div>
+                    <div class="p-4">
+                        <p>Die kostenlose Erstberatung findet in der Regel bei Ihnen vor Ort statt. In einem ausführlichen Gespräch lernen wir Ihr Unternehmen und Ihre aktuellen Herausforderungen im Bereich Facility Management kennen. Auf Basis dieser Informationen skizzieren wir erste Optimierungsansätze und besprechen das weitere Vorgehen. Die Erstberatung dauert ca. 1-2 Stunden und ist für Sie unverbindlich.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4 border-b cursor-pointer flex justify-between items-center">
+                        <h3 class="text-lg font-bold">Bieten Sie auch Umsetzungsunterstützung an?</h3>
+                        <i class="fas fa-chevron-down text-rivog-orange"></i>
+                    </div>
+                    <div class="p-4">
+                        <p>Ja, auf Wunsch begleiten wir Sie auch bei der Umsetzung der erarbeiteten Konzepte. Wir unterstützen Sie bei der Implementierung neuer Prozesse, der Schulung Ihrer Mitarbeiter und stehen Ihnen beratend zur Seite. Nach Abschluss der Implementierungsphase führen wir eine Erfolgskontrolle durch und nehmen bei Bedarf weitere Optimierungen vor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-rivog-orange py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Bereit für optimierte Facility Management Prozesse?</h2>
+            <p class="text-white text-xl mb-8 max-w-3xl mx-auto">Vereinbaren Sie jetzt Ihre kostenlose Erstberatung und erfahren Sie, wie wir Ihre Prozesse optimieren und Kosten senken können.</p>
+            <a href="#contact" class="bg-white text-rivog-orange py-3 px-8 rounded-md font-semibold inline-block hover:bg-opacity-90">Kostenlose Erstberatung vereinbaren</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Kontakt</h2>
+                <p class="text-xl text-gray-600">Nehmen Sie Kontakt mit uns auf für ein unverbindliches Beratungsgespräch</p>
+                <div class="w-24 h-1 bg-rivog-orange mx-auto mt-4"></div>
+            </div>
+
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6">Kontaktformular</h3>
+                        <form class="contact-form" id="rivog-contact-form">
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Anrede</label>
+                                    <select name="anrede">
+                                        <option>Frau</option>
+                                        <option>Herr</option>
+                                    </select>
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Firma</label>
+                                    <input type="text" name="firma" placeholder="Ihre Firma">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Vorname</label>
+                                    <input type="text" name="vorname" placeholder="Ihr Vorname">
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Nachname</label>
+                                    <input type="text" name="nachname" placeholder="Ihr Nachname">
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-2">
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">PLZ, Ort</label>
+                                    <input type="text" name="plz_ort" placeholder="PLZ, Ort">
+                                </div>
+                                <div class="w-full md:w-1/2 px-2 mb-4">
+                                    <label class="block mb-2">Funktion</label>
+                                    <input type="text" name="funktion" placeholder="Ihre Funktion">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">E-Mail</label>
+                                <input type="email" name="email" placeholder="Ihre E-Mail Adresse" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Telefon</label>
+                                <input type="tel" name="telefon" placeholder="Ihre Telefonnummer">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Ihr Anliegen</label>
+                                <select name="anliegen">
+                                    <option>Erstberatung vereinbaren</option>
+                                    <option>Informationsmaterial anfordern</option>
+                                    <option>Angebot einholen</option>
+                                    <option>Sonstige Anfrage</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block mb-2">Ihre Mitteilung</label>
+                                <textarea rows="4" name="mitteilung" placeholder="Beschreiben Sie kurz Ihr Anliegen und Ihre aktuellen Herausforderungen im Bereich Facility Management"></textarea>
+                            </div>
+                            <div class="mb-6">
+                                <label class="flex items-center">
+                                    <input type="checkbox" name="datenschutz" class="mr-2" value="1" required>
+                                    <span class="text-sm">Ich habe die Datenschutzbestimmungen gelesen und akzeptiere diese.</span>
+                                </label>
+                            </div>
+                            <button type="submit" id="contact-submit-btn" class="w-full">Anfrage absenden</button>
+                        </form>
+                        <div id="contact-success-msg" style="display:none;"></div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Kontaktdaten</h3>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Adresse</h4>
+                                <address class="not-italic">
+                                    RIVOG AG<br>
+                                    Lagerstrasse 4<br>
+                                    9200 Gossau SG<br>
+                                    Schweiz
+                                </address>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-phone-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Telefon</h4>
+                                <p>+41 71 511 13 03</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">E-Mail</h4>
+                                <p>info@rivog.ch</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-6">
+                            <div class="mr-4 text-rivog-orange">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Öffnungszeiten</h4>
+                                <p>Montag - Freitag: 07:00 - 18:00 Uhr</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-6">Ihr Ansprechpartner</h3>
+                        <div class="flex items-center mb-6">
+                            <div class="mr-6 bg-gray-200 rounded-full w-24 h-24 flex items-center justify-center">
+                                <i class="fas fa-user-tie text-gray-400 text-4xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Davor Juric</h4>
+                                <p class="text-gray-600">Leiter Consulting</p>
+                                <p class="mt-2">+41 71 511 13 03</p>
+                                <p>consulting@rivog.ch</p>
+                            </div>
+                        </div>
+                        <p class="italic">"Wir freuen uns darauf, Ihre Facility Management Prozesse zu optimieren und gemeinsam mit Ihnen nachhaltige und effiziente Lösungen zu entwickeln."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 pt-12 pb-8">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="flex items-center mb-6">
+                        <img src="assets/img/rivog-flag.bw_.png" alt="RIVOG AG Logo" class="h-12 mr-3">
+                        <h3 class="text-2xl font-bold">RIVOG AG</h3>
+                    </div>
+                    <p class="mb-6">Professionelle Facility Services mit Schweizer Qualität und Präzision. Unser umfangreiches Leistungsspektrum erlaubt Lösungen aus einer Hand.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=41797325493&text=Vielen%20Dank%20f%C3%BCr%20Ihr%20Interesse%20an%20der%20RIVOG.%20Stellen%20Sie%20Ihre%20Frage" class="bg-white bg-opacity-20 w-10 h-10 rounded-full flex items-center justify-center hover:bg-rivog-orange transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Dienstleistungen</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Unterhaltsreinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baureinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Baustellenbewachung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Spezialreinigung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Umzug & Räumung</a></li>
+                        <li><a href="#services" class="hover:text-rivog-orange flex items-center"><i class="fas fa-chevron-right mr-2 text-sm text-rivog-orange"></i> Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <h4 class="text-xl font-bold mb-6">Kontakt</h4>
+                    <ul class="space-y-4">
+                        <li class="flex">
+                            <i class="fas fa-map-marker-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>RIVOG AG<br>Lagerstrasse 4<br>9200 Gossau SG</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-phone-alt text-rivog-orange mr-3 mt-1"></i>
+                            <span>+41 71 511 13 03</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-envelope text-rivog-orange mr-3 mt-1"></i>
+                            <span>info@rivog.ch</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-wrap justify-between">
+                <div class="w-full md:w-auto mb-4 md:mb-0">
+                    <p>&copy; 2025 RIVOG AG. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <ul class="flex flex-wrap space-x-4">
+                        <li><a href="Impressum.html" class="hover:text-rivog-orange">Impressum</a></li>
+                        <li><a href="Datenschutz.html" class="hover:text-rivog-orange">Datenschutz</a></li>
+                        <li><a href="#" id="admin-link" onclick="openLoginModal()">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-rivog-orange text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Structured Data - FAQs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Für welche Unternehmen ist Ihr Consulting geeignet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unser Consulting-Angebot richtet sich an Unternehmen jeder Größe, die ihre Facility Management Prozesse optimieren möchten. Ob Bürokomplex, Produktionsstätte, Einkaufszentrum oder öffentliche Einrichtung – wir passen unsere Beratungsleistungen individuell an Ihre spezifischen Anforderungen an."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert ein typisches Consulting-Projekt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Dauer eines Consulting-Projekts hängt von verschiedenen Faktoren ab, wie der Größe Ihres Unternehmens, der Komplexität der Prozesse und dem Umfang der gewünschten Optimierung. In der Regel dauert ein Projekt zwischen 2 und 6 Monaten. Wir besprechen den zeitlichen Rahmen detailliert in unserem Erstgespräch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet eine Beratung durch die RIVOG AG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Kosten für unsere Beratungsleistungen sind abhängig vom Umfang des Projekts und den spezifischen Anforderungen. Wir erstellen Ihnen nach einem kostenlosen Erstgespräch ein individuelles Angebot. Unsere Erfahrung zeigt, dass sich die Investition in unsere Beratungsleistungen durch die erreichten Einsparungen und Effizienzsteigerungen in der Regel innerhalb von 12 bis 18 Monaten amortisiert."
+          }
+        }
+      ]
+    }
+    </script>
+    <script>
+    // Kontaktformular AJAX-Versand
+    const form = document.getElementById('rivog-contact-form');
+    const btn = document.getElementById('contact-submit-btn');
+    const msg = document.getElementById('contact-success-msg');
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.textContent = 'Sende...';
+            btn.style.backgroundColor = '#e65c00';
+            const formData = new FormData(form);
+            fetch('assets/contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(r => r.json())
+            .then(data => {
+                if(data.success) {
+                    btn.textContent = 'Vielen Dank. Wir melden uns zeitnahe bei Ihnen.';
+                    btn.style.backgroundColor = '#22c55e';
+                    msg.style.display = 'block';
+                    msg.textContent = '';
+                    setTimeout(() => {
+                        btn.textContent = 'Anfrage absenden';
+                        btn.style.backgroundColor = '#ff6600';
+                        btn.disabled = false;
+                    }, 10000);
+                } else {
+                    btn.textContent = 'Anfrage absenden';
+                    btn.style.backgroundColor = '#ff6600';
+                    btn.disabled = false;
+                    msg.style.display = 'block';
+                    msg.textContent = data.message || 'Fehler beim Versand.';
+                    msg.style.color = '#dc2626';
+                    setTimeout(() => { msg.style.display = 'none'; }, 10000);
+                }
+            })
+            .catch(() => {
+                btn.textContent = 'Anfrage absenden';
+                btn.style.backgroundColor = '#ff6600';
+                btn.disabled = false;
+                msg.style.display = 'block';
+                msg.textContent = 'Fehler beim Versand.';
+                msg.style.color = '#dc2626';
+                setTimeout(() => { msg.style.display = 'none'; }, 10000);
+            });
+        });
+    }
+    </script>
+    <script>
+    // Hamburger-Menü für Mobilgeräte
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuBtn = document.querySelector('header .xl\\:hidden button');
+      const nav = document.querySelector('header nav');
+      if (!menuBtn || !nav) return;
+      let mobileNav = document.getElementById('mobile-nav');
+      if (!mobileNav) {
+        mobileNav = nav.cloneNode(true);
+        mobileNav.id = 'mobile-nav';
+        mobileNav.classList.remove('hidden', 'xl:block');
+        mobileNav.classList.add('block', 'xl:hidden', 'bg-white', 'shadow-md', 'absolute', 'top-full', 'right-0', 'left-0', 'z-40');
+        mobileNav.style.display = 'none';
+        nav.parentNode.appendChild(mobileNav);
+      }
+      menuBtn.addEventListener('click', function() {
+        if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+          mobileNav.style.display = 'block';
+        } else {
+          mobileNav.style.display = 'none';
+        }
+      });
+      mobileNav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+          mobileNav.style.display = 'none';
+        }
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) {
+          mobileNav.style.display = 'none';
+        }
+      });
+    });
+    </script>
+     <script>
+        // Hamburger-Menü für Mobilgeräte (Popup von unten, zentriert)
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuBtn = document.querySelector('header .xl\\:hidden button');
+          const nav = document.querySelector('header nav');
+          if (!menuBtn || !nav) return;
+          let mobileNav = document.getElementById('mobile-nav');
+          if (!mobileNav) {
+            mobileNav = nav.cloneNode(true);
+            mobileNav.id = 'mobile-nav';
+            mobileNav.classList.remove('hidden', 'xl:block');
+            // Remove all Tailwind classes, add our own
+            mobileNav.className = '';
+            mobileNav.style.display = 'none';
+            // Zentrierung und Layout wird über CSS geregelt
+            nav.parentNode.appendChild(mobileNav);
+          }
+          menuBtn.addEventListener('click', function() {
+            if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+              mobileNav.style.display = 'block';
+            } else {
+              mobileNav.style.display = 'none';
+            }
+          });
+          // Menü schließt sich beim Klick auf einen Link
+          mobileNav.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+              mobileNav.style.display = 'none';
+            }
+          });
+          // Bei Resize: Menü ausblenden, wenn wieder groß
+          window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) {
+              mobileNav.style.display = 'none';
+            }
+          });
+        });
+        </script>
+    <script>
+    // Check if the page is in editor mode
+    const urlParams = new URLSearchParams(window.location.search);
+    const isEditorMode = urlParams.get('editor') === 'true';
+
+    if (isEditorMode) {
+        // Enable TinyMCE for editable elements
+        tinymce.init({
+            selector: '[data-editable]',
+            inline: true,
+            menubar: false,
+            plugins: 'lists link',
+            toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright | bullist numlist | link',
+            contextmenu: false,
+            valid_elements: 'p,h1,h2,h3,h4,h5,h6,a[href],strong,em,ul,ol,li,br',
+            setup: editor => {
+                editor.on('focus', () => editor.getElement().classList.add('tinymce-active'));
+                editor.on('blur', () => editor.getElement().classList.remove('tinymce-active'));
+            }
+        });
+
+        // Add overlay for images
+        document.querySelectorAll('img').forEach(img => {
+            const overlay = document.createElement('div');
+            overlay.className = 'image-overlay';
+            overlay.innerHTML = '<button class="edit-button">Edit</button>';
+            img.parentNode.insertBefore(overlay, img.nextSibling);
+        });
+
+        // Add save button
+        const saveButton = document.createElement('button');
+        saveButton.id = 'save-button';
+        saveButton.textContent = 'Speichern';
+        saveButton.onclick = async () => {
+            const changes = [];
+            document.querySelectorAll('[data-editable]').forEach(el => {
+                const editor = tinymce.get(el.id);
+                if (editor) {
+                    changes.push({
+                        elementId: el.id,
+                        content: editor.getContent()
+                    });
+                }
+            });
+
+            try {
+                const response = await fetch('editor/save_content.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        page: window.location.pathname.split('/').pop(),
+                        changes: changes
+                    })
+                });
+                const data = await response.json();
+                if (data.success) {
+                    alert('Änderungen gespeichert!');
+                    window.location.href = window.location.pathname; // Reload live version
+                } else {
+                    alert('Fehler beim Speichern: ' + data.message);
+                }
+            } catch (error) {
+                alert('Fehler beim Speichern: ' + error.message);
+            }
+        };
+        document.body.appendChild(saveButton);
+    }
+    </script>
+
+<nav>
+    <!-- Existing menu items -->
+    <ul>
+        <li><a href="Impressum.html">Impressum</a></li>
+        <li><a href="Datenschutz.html">Datenschutz</a></li>
+        <li><a href="#" id="admin-link" onclick="openLoginModal()">Admin</a></li>
+    </ul>
+</nav>
+
+<div id="login-modal" class="hidden">
+    <form id="login-form">
+        <label for="page-select">Seite wählen:</label>
+        <select id="page-select">
+            <option value="Baureinigung.html">Baureinigung</option>
+            <option value="Consulting.html">Consulting</option>
+            <option value="Security.html">Security</option>
+        </select>
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+    function openLoginModal() {
+        document.getElementById('login-modal').classList.remove('hidden');
+    }
+
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const selectedPage = document.getElementById('page-select').value;
+        const password = document.getElementById('password').value;
+
+        // Simulate login validation
+        if (password === 'admin') {
+            window.location.href = `${selectedPage}?editor=true`;
+        } else {
+            alert('Falsches Passwort!');
+        }
+    });
+</script>
+</body>
+</html>
